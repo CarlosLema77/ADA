@@ -1,0 +1,60 @@
+{
+  "nombre": "07_brecha_logaritmica",
+  "descripcion": "Familia de peor caso: el voraz elige C3, C2, C1 (3) y el óptimo es {A, B} (2).",
+  "r": 14,
+  "interacciones": [
+    {
+      "id": "A",
+      "categorias": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "B",
+      "categorias": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "C1",
+      "categorias": [
+        1,
+        8
+      ]
+    },
+    {
+      "id": "C2",
+      "categorias": [
+        2,
+        3,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "C3",
+      "categorias": [
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        14
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "caso": "03_reduccion_grafo_5_vertices",
+  "desempate": "menor posición en la entrada",
+  "pasos": [
+    {
+      "paso": 1,
+      "elegida": "b",
+      "ganancia": 3,
+      "categorias_nuevas": [
+        1,
+        3,
+        4
+      ],
+      "cubiertas_acumuladas": 3,
+      "faltantes": [
+        2,
+        5,
+        6
+      ],
+      "empatadas": [
+        "c"
+      ]
+    },
+    {
+      "paso": 2,
+      "elegida": "c",
+      "ganancia": 2,
+      "categorias_nuevas": [
+        2,
+        5
+      ],
+      "cubiertas_acumuladas": 5,
+      "faltantes": [
+        6
+      ],
+      "empatadas": [
+        "e"
+      ]
+    },
+    {
+      "paso": 3,
+      "elegida": "d",
+      "ganancia": 1,
+      "categorias_nuevas": [
+        6
+      ],
+      "cubiertas_acumuladas": 6,
+      "faltantes": [],
+      "empatadas": [
+        "e"
+      ]
+    }
+  ]
+}

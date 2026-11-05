@@ -1,0 +1,92 @@
+{
+  "caso": "entrada_G3_mochila_20_nodos",
+  "desempate": "menor posición en la entrada",
+  "pasos": [
+    {
+      "paso": 1,
+      "elegida": "E01",
+      "ganancia": 4,
+      "categorias_nuevas": [
+        "R01",
+        "R02",
+        "R03",
+        "R10"
+      ],
+      "cubiertas_acumuladas": 4,
+      "faltantes": [
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R11",
+        "R12"
+      ],
+      "empatadas": [
+        "E03",
+        "E06",
+        "E08",
+        "E10",
+        "E12",
+        "E15",
+        "E16",
+        "E17",
+        "E18",
+        "E19",
+        "E20"
+      ]
+    },
+    {
+      "paso": 2,
+      "elegida": "E16",
+      "ganancia": 4,
+      "categorias_nuevas": [
+        "R04",
+        "R05",
+        "R09",
+        "R12"
+      ],
+      "cubiertas_acumuladas": 8,
+      "faltantes": [
+        "R06",
+        "R07",
+        "R08",
+        "R11"
+      ],
+      "empatadas": []
+    },
+    {
+      "paso": 3,
+      "elegida": "E06",
+      "ganancia": 3,
+      "categorias_nuevas": [
+        "R07",
+        "R08",
+        "R11"
+      ],
+      "cubiertas_acumuladas": 11,
+      "faltantes": [
+        "R06"
+      ],
+      "empatadas": []
+    },
+    {
+      "paso": 4,
+      "elegida": "E03",
+      "ganancia": 1,
+      "categorias_nuevas": [
+        "R06"
+      ],
+      "cubiertas_acumuladas": 12,
+      "faltantes": [],
+      "empatadas": [
+        "E08",
+        "E13",
+        "E15",
+        "E17",
+        "E20"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+| caso | n | r | d | voraz | optimo | razon | H_d | tiempo_mediana_ms | estado | seleccion |
+|---|---|---|---|---|---|---|---|---|---|---|
+| entrada_G3_mochila_20_nodos | 20 | 12 | 4 | 4 | 4 | 1.000 | 2.083 | 0.0129 | OK | E01 E16 E06 E03 |

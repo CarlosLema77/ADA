@@ -1,0 +1,32 @@
+{
+  "nombre": "04_una_cubre_todo",
+  "descripcion": "Borde: una sola interacción cubre todo.",
+  "r": 5,
+  "interacciones": [
+    {
+      "id": "I1",
+      "categorias": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "I2",
+      "categorias": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "I3",
+      "categorias": [
+        3,
+        4,
+        5
+      ]
+    }
+  ]
+}

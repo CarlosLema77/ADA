@@ -1,0 +1,23 @@
+{
+  "nombre": "05_r_igual_1",
+  "descripcion": "Borde: r=1, con una interacción vacía y dos repetidas.",
+  "r": 1,
+  "interacciones": [
+    {
+      "id": "I1",
+      "categorias": []
+    },
+    {
+      "id": "I2",
+      "categorias": [
+        1
+      ]
+    },
+    {
+      "id": "I3",
+      "categorias": [
+        1
+      ]
+    }
+  ]
+}

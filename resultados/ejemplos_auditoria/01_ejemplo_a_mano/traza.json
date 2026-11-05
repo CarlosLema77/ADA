@@ -1,0 +1,37 @@
+{
+  "caso": "01_ejemplo_a_mano",
+  "desempate": "menor posición en la entrada",
+  "pasos": [
+    {
+      "paso": 1,
+      "elegida": "I1",
+      "ganancia": 2,
+      "categorias_nuevas": [
+        1,
+        2
+      ],
+      "cubiertas_acumuladas": 2,
+      "faltantes": [
+        3,
+        4
+      ],
+      "empatadas": [
+        "I2",
+        "I3",
+        "I4"
+      ]
+    },
+    {
+      "paso": 2,
+      "elegida": "I3",
+      "ganancia": 2,
+      "categorias_nuevas": [
+        3,
+        4
+      ],
+      "cubiertas_acumuladas": 4,
+      "faltantes": [],
+      "empatadas": []
+    }
+  ]
+}

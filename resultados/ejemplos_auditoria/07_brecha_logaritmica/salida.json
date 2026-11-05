@@ -1,0 +1,43 @@
+{
+  "caso": "07_brecha_logaritmica",
+  "instancia": {
+    "n": 5,
+    "r": 14,
+    "d": 8,
+    "s": 28
+  },
+  "voraz": {
+    "seleccion": [
+      "C3",
+      "C2",
+      "C1"
+    ],
+    "tamano": 3,
+    "pasos": 3
+  },
+  "tiempo_voraz": {
+    "mediana_s": 4.500150680541992e-06,
+    "min_s": 4.499917849898338e-06,
+    "max_s": 5.19980676472187e-06,
+    "repeticiones": 5
+  },
+  "verificacion": {
+    "cubre_las_r_categorias": true
+  },
+  "cota": {
+    "H_d": 2.717857142857143,
+    "explicacion": "|voraz| ≤ H(d)·OPT (Johnson 1974; Chvátal 1979)"
+  },
+  "optimo_fuerza_bruta": {
+    "tamano": 2,
+    "seleccion": [
+      "A",
+      "B"
+    ],
+    "subconjuntos_probados": 6
+  },
+  "comparacion": {
+    "razon_voraz_sobre_optimo": 1.5,
+    "cumple_cota": true
+  }
+}

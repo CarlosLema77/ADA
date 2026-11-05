@@ -1,0 +1,27 @@
+{
+  "nombre": "06_no_factible",
+  "descripcion": "Borde: las categorías 4 y 5 no las cubre nadie; el programa debe rechazarla con mensaje claro.",
+  "r": 5,
+  "interacciones": [
+    {
+      "id": "I1",
+      "categorias": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "I2",
+      "categorias": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "I3",
+      "categorias": [
+        3
+      ]
+    }
+  ]
+}

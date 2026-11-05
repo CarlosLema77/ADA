@@ -1,0 +1,43 @@
+{
+  "caso": "02_voraz_no_optimo",
+  "instancia": {
+    "n": 3,
+    "r": 6,
+    "d": 4,
+    "s": 10
+  },
+  "voraz": {
+    "seleccion": [
+      "I3",
+      "I1",
+      "I2"
+    ],
+    "tamano": 3,
+    "pasos": 3
+  },
+  "tiempo_voraz": {
+    "mediana_s": 3.00002284348011e-06,
+    "min_s": 2.700136974453926e-06,
+    "max_s": 3.8000289350748062e-06,
+    "repeticiones": 5
+  },
+  "verificacion": {
+    "cubre_las_r_categorias": true
+  },
+  "cota": {
+    "H_d": 2.0833333333333335,
+    "explicacion": "|voraz| ≤ H(d)·OPT (Johnson 1974; Chvátal 1979)"
+  },
+  "optimo_fuerza_bruta": {
+    "tamano": 2,
+    "seleccion": [
+      "I1",
+      "I2"
+    ],
+    "subconjuntos_probados": 4
+  },
+  "comparacion": {
+    "razon_voraz_sobre_optimo": 1.5,
+    "cumple_cota": true
+  }
+}

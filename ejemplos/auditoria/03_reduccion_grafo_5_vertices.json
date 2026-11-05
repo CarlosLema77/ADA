@@ -1,0 +1,44 @@
+{
+  "nombre": "03_reduccion_grafo_5_vertices",
+  "descripcion": "Instancia producida por la reducción desde Cobertura de Vértices. Aristas: 1=ab 2=ac 3=bc 4=bd 5=ce 6=de.",
+  "r": 6,
+  "interacciones": [
+    {
+      "id": "a",
+      "categorias": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "b",
+      "categorias": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "c",
+      "categorias": [
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "d",
+      "categorias": [
+        4,
+        6
+      ]
+    },
+    {
+      "id": "e",
+      "categorias": [
+        5,
+        6
+      ]
+    }
+  ]
+}
