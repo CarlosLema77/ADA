@@ -1,0 +1,40 @@
+{
+  "caso": "05_r_igual_1",
+  "instancia": {
+    "n": 3,
+    "r": 1,
+    "d": 1,
+    "s": 2
+  },
+  "voraz": {
+    "seleccion": [
+      "I2"
+    ],
+    "tamano": 1,
+    "pasos": 1
+  },
+  "tiempo_voraz": {
+    "mediana_s": 1.500127837061882e-06,
+    "min_s": 1.400010660290718e-06,
+    "max_s": 2.00001522898674e-06,
+    "repeticiones": 5
+  },
+  "verificacion": {
+    "cubre_las_r_categorias": true
+  },
+  "cota": {
+    "H_d": 1.0,
+    "explicacion": "|voraz| ≤ H(d)·OPT (Johnson 1974; Chvátal 1979)"
+  },
+  "optimo_fuerza_bruta": {
+    "tamano": 1,
+    "seleccion": [
+      "I2"
+    ],
+    "subconjuntos_probados": 2
+  },
+  "comparacion": {
+    "razon_voraz_sobre_optimo": 1.0,
+    "cumple_cota": true
+  }
+}

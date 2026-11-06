@@ -1,0 +1,46 @@
+{
+  "caso": "entrada_G3_mochila_20_nodos",
+  "instancia": {
+    "n": 20,
+    "r": 12,
+    "d": 4,
+    "s": 72
+  },
+  "voraz": {
+    "seleccion": [
+      "E01",
+      "E16",
+      "E06",
+      "E03"
+    ],
+    "tamano": 4,
+    "pasos": 4
+  },
+  "tiempo_voraz": {
+    "mediana_s": 1.2899981811642647e-05,
+    "min_s": 1.2499978765845299e-05,
+    "max_s": 1.4600111171603203e-05,
+    "repeticiones": 5
+  },
+  "verificacion": {
+    "cubre_las_r_categorias": true
+  },
+  "cota": {
+    "H_d": 2.0833333333333335,
+    "explicacion": "|voraz| ≤ H(d)·OPT (Johnson 1974; Chvátal 1979)"
+  },
+  "optimo_fuerza_bruta": {
+    "tamano": 4,
+    "seleccion": [
+      "E01",
+      "E03",
+      "E05",
+      "E10"
+    ],
+    "subconjuntos_probados": 1524
+  },
+  "comparacion": {
+    "razon_voraz_sobre_optimo": 1.0,
+    "cumple_cota": true
+  }
+}

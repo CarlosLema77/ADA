@@ -1,0 +1,49 @@
+{
+  "caso": "02_voraz_no_optimo",
+  "desempate": "menor posición en la entrada",
+  "pasos": [
+    {
+      "paso": 1,
+      "elegida": "I3",
+      "ganancia": 4,
+      "categorias_nuevas": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "cubiertas_acumuladas": 4,
+      "faltantes": [
+        3,
+        6
+      ],
+      "empatadas": []
+    },
+    {
+      "paso": 2,
+      "elegida": "I1",
+      "ganancia": 1,
+      "categorias_nuevas": [
+        3
+      ],
+      "cubiertas_acumuladas": 5,
+      "faltantes": [
+        6
+      ],
+      "empatadas": [
+        "I2"
+      ]
+    },
+    {
+      "paso": 3,
+      "elegida": "I2",
+      "ganancia": 1,
+      "categorias_nuevas": [
+        6
+      ],
+      "cubiertas_acumuladas": 6,
+      "faltantes": [],
+      "empatadas": []
+    }
+  ]
+}

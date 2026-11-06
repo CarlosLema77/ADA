@@ -1,0 +1,44 @@
+{
+  "caso": "03_reduccion_grafo_5_vertices",
+  "instancia": {
+    "n": 5,
+    "r": 6,
+    "d": 3,
+    "s": 12
+  },
+  "voraz": {
+    "seleccion": [
+      "b",
+      "c",
+      "d"
+    ],
+    "tamano": 3,
+    "pasos": 3
+  },
+  "tiempo_voraz": {
+    "mediana_s": 3.200024366378784e-06,
+    "min_s": 3.0999071896076202e-06,
+    "max_s": 4.100147634744644e-06,
+    "repeticiones": 5
+  },
+  "verificacion": {
+    "cubre_las_r_categorias": true
+  },
+  "cota": {
+    "H_d": 1.8333333333333333,
+    "explicacion": "|voraz| ≤ H(d)·OPT (Johnson 1974; Chvátal 1979)"
+  },
+  "optimo_fuerza_bruta": {
+    "tamano": 3,
+    "seleccion": [
+      "a",
+      "b",
+      "e"
+    ],
+    "subconjuntos_probados": 18
+  },
+  "comparacion": {
+    "razon_voraz_sobre_optimo": 1.0,
+    "cumple_cota": true
+  }
+}

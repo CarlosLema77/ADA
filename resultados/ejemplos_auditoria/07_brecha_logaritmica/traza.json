@@ -1,0 +1,60 @@
+{
+  "caso": "07_brecha_logaritmica",
+  "desempate": "menor posición en la entrada",
+  "pasos": [
+    {
+      "paso": 1,
+      "elegida": "C3",
+      "ganancia": 8,
+      "categorias_nuevas": [
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        14
+      ],
+      "cubiertas_acumuladas": 8,
+      "faltantes": [
+        1,
+        2,
+        3,
+        8,
+        9,
+        10
+      ],
+      "empatadas": []
+    },
+    {
+      "paso": 2,
+      "elegida": "C2",
+      "ganancia": 4,
+      "categorias_nuevas": [
+        2,
+        3,
+        9,
+        10
+      ],
+      "cubiertas_acumuladas": 12,
+      "faltantes": [
+        1,
+        8
+      ],
+      "empatadas": []
+    },
+    {
+      "paso": 3,
+      "elegida": "C1",
+      "ganancia": 2,
+      "categorias_nuevas": [
+        1,
+        8
+      ],
+      "cubiertas_acumuladas": 14,
+      "faltantes": [],
+      "empatadas": []
+    }
+  ]
+}

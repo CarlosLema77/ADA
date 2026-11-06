@@ -1,0 +1,41 @@
+{
+  "nombre": "01_ejemplo_a_mano",
+  "descripcion": "Ejemplo resuelto a mano (n=5, r=4). Primer paso con empate cuádruple: gana I1 por desempate.",
+  "r": 4,
+  "interacciones": [
+    {
+      "id": "I1",
+      "categorias": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "I2",
+      "categorias": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "I3",
+      "categorias": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "I4",
+      "categorias": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "I5",
+      "categorias": [
+        2
+      ]
+    }
+  ]
+}

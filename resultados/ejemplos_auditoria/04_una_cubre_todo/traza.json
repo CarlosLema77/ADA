@@ -1,0 +1,21 @@
+{
+  "caso": "04_una_cubre_todo",
+  "desempate": "menor posición en la entrada",
+  "pasos": [
+    {
+      "paso": 1,
+      "elegida": "I2",
+      "ganancia": 5,
+      "categorias_nuevas": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "cubiertas_acumuladas": 5,
+      "faltantes": [],
+      "empatadas": []
+    }
+  ]
+}
