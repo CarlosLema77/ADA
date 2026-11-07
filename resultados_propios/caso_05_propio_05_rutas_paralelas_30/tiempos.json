@@ -1,0 +1,19 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_05_rutas_paralelas_30",
+  "archivo": "propio_05_rutas_paralelas_30.json",
+  "nota": "tiempo del algoritmo solo (sin leer el archivo ni escribir resultados), mediana de varias repeticiones",
+  "parte1": {
+    "repeticiones": 5,
+    "mediana_ms": 6.7083,
+    "minimo_ms": 6.4022,
+    "maximo_ms": 7.706
+  },
+  "parte2": {
+    "repeticiones": 5,
+    "mediana_ms": 0.0363,
+    "minimo_ms": 0.036,
+    "maximo_ms": 0.0457
+  }
+}

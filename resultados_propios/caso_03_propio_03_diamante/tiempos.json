@@ -1,0 +1,19 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_03_diamante",
+  "archivo": "propio_03_diamante.json",
+  "nota": "tiempo del algoritmo solo (sin leer el archivo ni escribir resultados), mediana de varias repeticiones",
+  "parte1": {
+    "repeticiones": 5,
+    "mediana_ms": 0.0133,
+    "minimo_ms": 0.0118,
+    "maximo_ms": 0.0213
+  },
+  "parte2": {
+    "repeticiones": 5,
+    "mediana_ms": 0.0036,
+    "minimo_ms": 0.0031,
+    "maximo_ms": 0.007
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_01_ejemplo_informe_n4",
+  "archivo": "propio_01_ejemplo_informe_n4.json",
+  "metodo": "voraz_mayor_ganancia",
+  "desempate": "gana el candidato que aparece primero en la entrada",
+  "vueltas": [
+    {
+      "vuelta": 1,
+      "elegida": "E01",
+      "ganancia": 2,
+      "categorias_nuevas": [
+        "R01",
+        "R02"
+      ],
+      "cubiertas_acumuladas": 2,
+      "faltan": 2,
+      "categorias_faltantes": [
+        "R03",
+        "R04"
+      ],
+      "empatadas_que_perdieron_por_desempate": [
+        "E02",
+        "E03",
+        "E04"
+      ],
+      "mejores_candidatos_de_la_vuelta": [
+        {
+          "candidato": "E01",
+          "ganancia": 2
+        },
+        {
+          "candidato": "E02",
+          "ganancia": 2
+        },
+        {
+          "candidato": "E03",
+          "ganancia": 2
+        },
+        {
+          "candidato": "E04",
+          "ganancia": 2
+        }
+      ]
+    },
+    {
+      "vuelta": 2,
+      "elegida": "E03",
+      "ganancia": 2,
+      "categorias_nuevas": [
+        "R03",
+        "R04"
+      ],
+      "cubiertas_acumuladas": 4,
+      "faltan": 0,
+      "categorias_faltantes": [],
+      "empatadas_que_perdieron_por_desempate": [],
+      "mejores_candidatos_de_la_vuelta": [
+        {
+          "candidato": "E03",
+          "ganancia": 2
+        },
+        {
+          "candidato": "E02",
+          "ganancia": 1
+        },
+        {
+          "candidato": "E04",
+          "ganancia": 1
+        }
+      ]
+    }
+  ]
+}

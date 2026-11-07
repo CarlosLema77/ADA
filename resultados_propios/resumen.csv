@@ -1,0 +1,12 @@
+carpeta,estado,n_etapas,aristas,r_categorias,B,metodo_parte1,duracion_sin_acelerar,duracion_final,ahorro,costo_usado,optimo_probado,tiempo_parte1_ms,factible_parte2,tamano_cobertura,tiempo_parte2_ms,verifica_parte1,verifica_parte2
+caso_01_propio_01_ejemplo_informe_n4,OK,4,3,4,7,programacion_dinamica_cadena,36,26,10,7,True,0.0086,True,2,0.0042,True,True
+caso_02_propio_02_voraz_no_optimo,OK,3,2,6,6,programacion_dinamica_cadena,18,13,5,6,True,0.0052,True,3,0.0048,True,True
+caso_03_propio_03_diamante,OK,4,4,4,5,ramificacion_y_acotamiento,14,8,6,5,True,0.0133,True,2,0.0036,True,True
+caso_04_propio_04_rutas_paralelas_20,OK,20,26,12,72,ramificacion_y_acotamiento,144,102,42,71,True,2.7058,True,5,0.0242,True,True
+caso_05_propio_05_rutas_paralelas_30,OK,30,42,15,100,ramificacion_y_acotamiento,264,197,67,97,True,6.7083,True,7,0.0363,True,True
+caso_06_propio_06_cadena_200,OK,200,199,30,1500,programacion_dinamica_cadena,4594,3270,1324,1500,True,17.7298,True,7,0.2518,True,True
+caso_07_propio_07_cadena_500,OK,500,499,60,5000,programacion_dinamica_cadena,10861,7167,3694,5000,True,171.6149,True,12,1.2094,True,True
+caso_08_propio_08_infactible,OK,3,2,4,4,programacion_dinamica_cadena,18,15,3,4,True,0.0052,False,,,True,True
+caso_09_propio_09_presupuesto_cero,OK,3,2,3,0,programacion_dinamica_cadena,18,18,0,0,True,0.0059,True,3,0.0047,True,True
+caso_10_propio_10_paralelo_40_ancho8,OK,40,128,20,150,ramificacion_y_acotamiento,151,120,31,150,True,1075.3307,True,7,0.0504,True,True
+caso_11_propio_11_reduccion_grafo_5_vertices,OK,5,4,6,5,programacion_dinamica_cadena,22,16,6,5,True,0.0126,True,3,0.0063,True,True

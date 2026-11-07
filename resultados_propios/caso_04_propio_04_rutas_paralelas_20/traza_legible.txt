@@ -1,0 +1,18 @@
+CASO propio_04_rutas_paralelas_20  (versión entrega1-1.1)
+n = 20 etapas, r = 12 categorías, B = 72, aristas del flujo = 26
+
+== PARTE 1: aceleración ==
+método: ramificacion_y_acotamiento
+candidatas=20  nodos explorados=261  podas por cota=110  duración inicial (voraz)=103
+  mejora en el nodo 253: duración 102 con costo 71
+etapas aceleradas: ['E01', 'E08', 'E10', 'E12', 'E16', 'E17', 'E19', 'E20']
+costo usado = 71 de B = 72; duración 144 -> 102  (ahorro 42); óptimo probado: True
+
+== PARTE 2: cobertura de auditoría ==
+método: voraz de mayor ganancia (desempate: gana el candidato que aparece primero en la entrada)
+  vuelta 1: elige E01 (ganancia 4), cubre nuevas ['R02', 'R05', 'R08', 'R11']; cubiertas 4/12, faltan 8
+  vuelta 2: elige E10 (ganancia 4), cubre nuevas ['R03', 'R04', 'R09', 'R12']; cubiertas 8/12, faltan 4
+  vuelta 3: elige E09 (ganancia 2), cubre nuevas ['R01', 'R06']; cubiertas 10/12, faltan 2
+  vuelta 4: elige E02 (ganancia 1), cubre nuevas ['R07']; cubiertas 11/12, faltan 1
+  vuelta 5: elige E05 (ganancia 1), cubre nuevas ['R10']; cubiertas 12/12, faltan 0
+interacciones elegidas: ['E01', 'E10', 'E09', 'E02', 'E05']  (tamaño 5)

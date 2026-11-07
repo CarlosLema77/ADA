@@ -1,0 +1,30 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_06_cadena_200",
+  "archivo": "propio_06_cadena_200.json",
+  "parte1": {
+    "ok": true,
+    "chequeos": {
+      "ids_validos_sin_repetidos": true,
+      "costo_recalculado": 1500,
+      "respeta_presupuesto": true,
+      "costo_coincide_con_la_salida": true,
+      "duracion_sin_acelerar_recalculada": 4594,
+      "duracion_final_recalculada": 3270,
+      "duraciones_coinciden_con_la_salida": true,
+      "ahorro_coincide": true,
+      "optimalidad": "no verificada (instancia demasiado grande para enumerar)"
+    }
+  },
+  "parte2": {
+    "ok": true,
+    "chequeos": {
+      "ids_validos_sin_repetidos": true,
+      "categorias_sin_cubrir": [],
+      "cubre_todas": true,
+      "tamano_coincide": true,
+      "optimo_por_enumeracion": "no calculado (instancia grande o infactible)"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_10_paralelo_40_ancho8",
+  "archivo": "propio_10_paralelo_40_ancho8.json",
+  "parte1": {
+    "ok": true,
+    "chequeos": {
+      "ids_validos_sin_repetidos": true,
+      "costo_recalculado": 150,
+      "respeta_presupuesto": true,
+      "costo_coincide_con_la_salida": true,
+      "duracion_sin_acelerar_recalculada": 151,
+      "duracion_final_recalculada": 120,
+      "duraciones_coinciden_con_la_salida": true,
+      "ahorro_coincide": true,
+      "optimalidad": "no verificada (instancia demasiado grande para enumerar)"
+    }
+  },
+  "parte2": {
+    "ok": true,
+    "chequeos": {
+      "ids_validos_sin_repetidos": true,
+      "categorias_sin_cubrir": [],
+      "cubre_todas": true,
+      "tamano_coincide": true,
+      "optimo_por_enumeracion": "no calculado (instancia grande o infactible)"
+    }
+  }
+}

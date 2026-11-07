@@ -1,0 +1,19 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_01_ejemplo_informe_n4",
+  "archivo": "propio_01_ejemplo_informe_n4.json",
+  "nota": "tiempo del algoritmo solo (sin leer el archivo ni escribir resultados), mediana de varias repeticiones",
+  "parte1": {
+    "repeticiones": 5,
+    "mediana_ms": 0.0086,
+    "minimo_ms": 0.006,
+    "maximo_ms": 0.0191
+  },
+  "parte2": {
+    "repeticiones": 5,
+    "mediana_ms": 0.0042,
+    "minimo_ms": 0.0037,
+    "maximo_ms": 0.0094
+  }
+}

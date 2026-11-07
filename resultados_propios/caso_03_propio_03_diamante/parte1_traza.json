@@ -1,0 +1,13 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_03_diamante",
+  "archivo": "propio_03_diamante.json",
+  "metodo": "ramificacion_y_acotamiento",
+  "etapas_candidatas": 4,
+  "duracion_solucion_inicial_voraz": 8,
+  "nodos_explorados": 1,
+  "podas_por_cota": 1,
+  "limite_nodos": 3000000,
+  "mejoras_de_la_mejor_solucion": []
+}

@@ -1,0 +1,14 @@
+CASO propio_03_diamante  (versión entrega1-1.1)
+n = 4 etapas, r = 4 categorías, B = 5, aristas del flujo = 4
+
+== PARTE 1: aceleración ==
+método: ramificacion_y_acotamiento
+candidatas=4  nodos explorados=1  podas por cota=1  duración inicial (voraz)=8
+etapas aceleradas: ['B']
+costo usado = 5 de B = 5; duración 14 -> 8  (ahorro 6); óptimo probado: True
+
+== PARTE 2: cobertura de auditoría ==
+método: voraz de mayor ganancia (desempate: gana el candidato que aparece primero en la entrada)
+  vuelta 1: elige B (ganancia 2), cubre nuevas ['R02', 'R03']; cubiertas 2/4, faltan 2
+  vuelta 2: elige D (ganancia 2), cubre nuevas ['R01', 'R04']; cubiertas 4/4, faltan 0
+interacciones elegidas: ['B', 'D']  (tamaño 2)

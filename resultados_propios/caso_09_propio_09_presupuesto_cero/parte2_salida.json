@@ -1,0 +1,18 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_09_presupuesto_cero",
+  "archivo": "propio_09_presupuesto_cero.json",
+  "metodo": "voraz_mayor_ganancia",
+  "n_candidatos": 3,
+  "r_categorias": 3,
+  "factible": true,
+  "interacciones_elegidas": [
+    "E01",
+    "E02",
+    "E03"
+  ],
+  "tamano": 3,
+  "d_max_categorias_por_candidato": 1,
+  "cubre_todas_las_categorias": true
+}

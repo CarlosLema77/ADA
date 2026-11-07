@@ -1,0 +1,39 @@
+CASO entrada_G3_mochila_20_nodos  (versión entrega1-1.1)
+n = 20 etapas, r = 12 categorías, B = 72, aristas del flujo = 19
+
+== PARTE 1: aceleración ==
+método: programacion_dinamica_cadena
+recurrencia: DP[i][b] = max(DP[i-1][b], DP[i-1][b-c_i] + d_i) si c_i <= b; si no, DP[i-1][b]
+tabla DP: 21 filas x 73 columnas
+reconstrucción hacia atrás (de la última etapa a la primera):
+  etapa  presupuesto_antes  DP[i][b]  decisión   costo  ahorro  presupuesto_después
+  E20                   72        55  no              0       0                  72
+  E19                   72        55  no              0       0                  72
+  E18                   72        55  no              0       0                  72
+  E17                   72        55  no              0       0                  72
+  E16                   72        55  no              0       0                  72
+  E15                   72        55  no              0       0                  72
+  E14                   72        55  no              0       0                  72
+  E13                   72        55  no              0       0                  72
+  E12                   72        55  ACELERAR       9       7                  63
+  E11                   63        48  no              0       0                  63
+  E10                   63        48  no              0       0                  63
+  E09                   63        48  no              0       0                  63
+  E08                   63        48  ACELERAR      17      13                  46
+  E07                   46        35  no              0       0                  46
+  E06                   46        35  ACELERAR      13      10                  33
+  E05                   33        25  no              0       0                  33
+  E04                   33        25  ACELERAR      16      12                  17
+  E03                   17        13  ACELERAR       5       4                  12
+  E02                   12         9  ACELERAR      12       9                   0
+  E01                    0         0  no              0       0                   0
+etapas aceleradas: ['E02', 'E03', 'E04', 'E06', 'E08', 'E12']
+costo usado = 72 de B = 72; duración 501 -> 446  (ahorro 55); óptimo probado: True
+
+== PARTE 2: cobertura de auditoría ==
+método: voraz de mayor ganancia (desempate: gana el candidato que aparece primero en la entrada)
+  vuelta 1: elige E01 (ganancia 4), cubre nuevas ['R01', 'R02', 'R03', 'R10']; cubiertas 4/12, faltan 8
+  vuelta 2: elige E16 (ganancia 4), cubre nuevas ['R04', 'R05', 'R09', 'R12']; cubiertas 8/12, faltan 4
+  vuelta 3: elige E06 (ganancia 3), cubre nuevas ['R07', 'R08', 'R11']; cubiertas 11/12, faltan 1
+  vuelta 4: elige E03 (ganancia 1), cubre nuevas ['R06']; cubiertas 12/12, faltan 0
+interacciones elegidas: ['E01', 'E16', 'E06', 'E03']  (tamaño 4)

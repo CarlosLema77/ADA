@@ -1,0 +1,21 @@
+CASO propio_01_ejemplo_informe_n4  (versión entrega1-1.1)
+n = 4 etapas, r = 4 categorías, B = 7, aristas del flujo = 3
+
+== PARTE 1: aceleración ==
+método: programacion_dinamica_cadena
+recurrencia: DP[i][b] = max(DP[i-1][b], DP[i-1][b-c_i] + d_i) si c_i <= b; si no, DP[i-1][b]
+tabla DP: 5 filas x 8 columnas
+reconstrucción hacia atrás (de la última etapa a la primera):
+  etapa  presupuesto_antes  DP[i][b]  decisión   costo  ahorro  presupuesto_después
+  E04                    7        10  ACELERAR       2       3                   5
+  E03                    5         7  ACELERAR       5       7                   0
+  E02                    0         0  no              0       0                   0
+  E01                    0         0  no              0       0                   0
+etapas aceleradas: ['E03', 'E04']
+costo usado = 7 de B = 7; duración 36 -> 26  (ahorro 10); óptimo probado: True
+
+== PARTE 2: cobertura de auditoría ==
+método: voraz de mayor ganancia (desempate: gana el candidato que aparece primero en la entrada)
+  vuelta 1: elige E01 (ganancia 2), cubre nuevas ['R01', 'R02']; cubiertas 2/4, faltan 2
+  vuelta 2: elige E03 (ganancia 2), cubre nuevas ['R03', 'R04']; cubiertas 4/4, faltan 0
+interacciones elegidas: ['E01', 'E03']  (tamaño 2)

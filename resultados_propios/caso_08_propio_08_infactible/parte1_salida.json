@@ -1,0 +1,21 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_08_infactible",
+  "archivo": "propio_08_infactible.json",
+  "metodo": "programacion_dinamica_cadena",
+  "presupuesto_B": 4,
+  "etapas_aceleradas": [
+    "E03"
+  ],
+  "costo_usado": 4,
+  "duracion_sin_acelerar": 18,
+  "duracion_final": 15,
+  "ahorro": 3,
+  "optimo_probado": true,
+  "x": {
+    "E01": 0,
+    "E02": 0,
+    "E03": 1
+  }
+}

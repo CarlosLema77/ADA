@@ -1,0 +1,122 @@
+{
+ "_descripcion": "La categoría R04 no la cubre ninguna interacción: la Parte 2 debe reportar la instancia como infactible.",
+ "parametros": {
+  "numero_etapas": 3,
+  "presupuesto_aceleracion_B": 4,
+  "presupuesto_conjunto_aceleracion_y_auditoria": 34,
+  "numero_categorias_riesgo": 4
+ },
+ "flujo": [
+  {
+   "origen": "E01",
+   "destino": "E02"
+  },
+  {
+   "origen": "E02",
+   "destino": "E03"
+  }
+ ],
+ "categorias_riesgo": [
+  {
+   "id": "R01",
+   "categoria": "sesgo",
+   "importancia": 1
+  },
+  {
+   "id": "R02",
+   "categoria": "privacidad",
+   "importancia": 3
+  },
+  {
+   "id": "R03",
+   "categoria": "formato",
+   "importancia": 5
+  },
+  {
+   "id": "R04",
+   "categoria": "alucinacion",
+   "importancia": 2
+  }
+ ],
+ "etapas": [
+  {
+   "id": "E01",
+   "duracion_normal": 5,
+   "costo_aceleracion": 2,
+   "reduccion_tiempo_si_acelera": 1,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R01",
+    "R02"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 2,
+     "riesgos_cubiertos": [
+      "R01"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R01",
+      "R02"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E02",
+   "duracion_normal": 6,
+   "costo_aceleracion": 3,
+   "reduccion_tiempo_si_acelera": 2,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R02",
+    "R03"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 3,
+     "riesgos_cubiertos": [
+      "R02"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 6,
+     "riesgos_cubiertos": [
+      "R02",
+      "R03"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E03",
+   "duracion_normal": 7,
+   "costo_aceleracion": 4,
+   "reduccion_tiempo_si_acelera": 3,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R01"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 4,
+     "riesgos_cubiertos": [
+      "R01"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 7,
+     "riesgos_cubiertos": [
+      "R01"
+     ]
+    }
+   ]
+  }
+ ]
+}

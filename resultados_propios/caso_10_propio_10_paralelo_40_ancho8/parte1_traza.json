@@ -1,0 +1,39 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_10_paralelo_40_ancho8",
+  "archivo": "propio_10_paralelo_40_ancho8.json",
+  "metodo": "ramificacion_y_acotamiento",
+  "etapas_candidatas": 40,
+  "duracion_solucion_inicial_voraz": 125,
+  "nodos_explorados": 49737,
+  "podas_por_cota": 24860,
+  "limite_nodos": 3000000,
+  "mejoras_de_la_mejor_solucion": [
+    {
+      "nodo": 2197,
+      "duracion": 124,
+      "costo": 150
+    },
+    {
+      "nodo": 4419,
+      "duracion": 123,
+      "costo": 150
+    },
+    {
+      "nodo": 9805,
+      "duracion": 122,
+      "costo": 149
+    },
+    {
+      "nodo": 16701,
+      "duracion": 121,
+      "costo": 150
+    },
+    {
+      "nodo": 36348,
+      "duracion": 120,
+      "costo": 150
+    }
+  ]
+}

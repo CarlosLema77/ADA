@@ -1,0 +1,2 @@
+carpeta,estado,n_etapas,aristas,r_categorias,B,metodo_parte1,duracion_sin_acelerar,duracion_final,ahorro,costo_usado,optimo_probado,tiempo_parte1_ms,factible_parte2,tamano_cobertura,tiempo_parte2_ms,verifica_parte1,verifica_parte2
+caso_01_entrada_G3_mochila_20_nodos,OK,20,19,12,72,programacion_dinamica_cadena,501,446,55,72,True,0.0732,True,4,0.0211,True,True

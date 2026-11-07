@@ -1,0 +1,22 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_03_diamante",
+  "archivo": "propio_03_diamante.json",
+  "metodo": "ramificacion_y_acotamiento",
+  "presupuesto_B": 5,
+  "etapas_aceleradas": [
+    "B"
+  ],
+  "costo_usado": 5,
+  "duracion_sin_acelerar": 14,
+  "duracion_final": 8,
+  "ahorro": 6,
+  "optimo_probado": true,
+  "x": {
+    "A": 0,
+    "B": 1,
+    "C": 0,
+    "D": 0
+  }
+}

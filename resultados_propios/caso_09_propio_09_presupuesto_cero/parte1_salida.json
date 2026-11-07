@@ -1,0 +1,19 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_09_presupuesto_cero",
+  "archivo": "propio_09_presupuesto_cero.json",
+  "metodo": "programacion_dinamica_cadena",
+  "presupuesto_B": 0,
+  "etapas_aceleradas": [],
+  "costo_usado": 0,
+  "duracion_sin_acelerar": 18,
+  "duracion_final": 18,
+  "ahorro": 0,
+  "optimo_probado": true,
+  "x": {
+    "E01": 0,
+    "E02": 0,
+    "E03": 0
+  }
+}

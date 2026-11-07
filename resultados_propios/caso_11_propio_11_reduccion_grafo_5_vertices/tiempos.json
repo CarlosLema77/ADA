@@ -1,0 +1,19 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_11_reduccion_grafo_5_vertices",
+  "archivo": "propio_11_reduccion_grafo_5_vertices.json",
+  "nota": "tiempo del algoritmo solo (sin leer el archivo ni escribir resultados), mediana de varias repeticiones",
+  "parte1": {
+    "repeticiones": 5,
+    "mediana_ms": 0.0126,
+    "minimo_ms": 0.0076,
+    "maximo_ms": 0.0291
+  },
+  "parte2": {
+    "repeticiones": 5,
+    "mediana_ms": 0.0063,
+    "minimo_ms": 0.0056,
+    "maximo_ms": 0.0101
+  }
+}

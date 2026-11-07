@@ -1,0 +1,18 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_02_voraz_no_optimo",
+  "archivo": "propio_02_voraz_no_optimo.json",
+  "metodo": "voraz_mayor_ganancia",
+  "n_candidatos": 3,
+  "r_categorias": 6,
+  "factible": true,
+  "interacciones_elegidas": [
+    "E01",
+    "E02",
+    "E03"
+  ],
+  "tamano": 3,
+  "d_max_categorias_por_candidato": 4,
+  "cubre_todas_las_categorias": true
+}

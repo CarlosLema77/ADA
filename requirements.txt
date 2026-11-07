@@ -1,0 +1,3 @@
+# El programa (ejecutar_casos.py y src/ada) no usa librerías externas: solo la biblioteca estándar de Python 3.
+# pytest solo hace falta para correr las pruebas automáticas (python -m pytest).
+pytest==9.1.1

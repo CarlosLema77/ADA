@@ -1,0 +1,19 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_10_paralelo_40_ancho8",
+  "archivo": "propio_10_paralelo_40_ancho8.json",
+  "nota": "tiempo del algoritmo solo (sin leer el archivo ni escribir resultados), mediana de varias repeticiones",
+  "parte1": {
+    "repeticiones": 5,
+    "mediana_ms": 1075.3307,
+    "minimo_ms": 1030.7298,
+    "maximo_ms": 1227.8042
+  },
+  "parte2": {
+    "repeticiones": 5,
+    "mediana_ms": 0.0504,
+    "minimo_ms": 0.0491,
+    "maximo_ms": 0.0597
+  }
+}

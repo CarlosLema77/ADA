@@ -1,0 +1,19 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_07_cadena_500",
+  "archivo": "propio_07_cadena_500.json",
+  "nota": "tiempo del algoritmo solo (sin leer el archivo ni escribir resultados), mediana de varias repeticiones",
+  "parte1": {
+    "repeticiones": 5,
+    "mediana_ms": 171.6149,
+    "minimo_ms": 167.4082,
+    "maximo_ms": 175.8962
+  },
+  "parte2": {
+    "repeticiones": 5,
+    "mediana_ms": 1.2094,
+    "minimo_ms": 1.1633,
+    "maximo_ms": 1.3124
+  }
+}

@@ -1,0 +1,113 @@
+{
+ "_descripcion": "B = 0: no se puede acelerar nada y la duración queda igual.",
+ "parametros": {
+  "numero_etapas": 3,
+  "presupuesto_aceleracion_B": 0,
+  "presupuesto_conjunto_aceleracion_y_auditoria": 30,
+  "numero_categorias_riesgo": 3
+ },
+ "flujo": [
+  {
+   "origen": "E01",
+   "destino": "E02"
+  },
+  {
+   "origen": "E02",
+   "destino": "E03"
+  }
+ ],
+ "categorias_riesgo": [
+  {
+   "id": "R01",
+   "categoria": "sesgo",
+   "importancia": 1
+  },
+  {
+   "id": "R02",
+   "categoria": "privacidad",
+   "importancia": 3
+  },
+  {
+   "id": "R03",
+   "categoria": "formato",
+   "importancia": 5
+  }
+ ],
+ "etapas": [
+  {
+   "id": "E01",
+   "duracion_normal": 5,
+   "costo_aceleracion": 2,
+   "reduccion_tiempo_si_acelera": 1,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R01"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 2,
+     "riesgos_cubiertos": [
+      "R01"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R01"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E02",
+   "duracion_normal": 6,
+   "costo_aceleracion": 3,
+   "reduccion_tiempo_si_acelera": 2,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R02"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 3,
+     "riesgos_cubiertos": [
+      "R02"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 6,
+     "riesgos_cubiertos": [
+      "R02"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E03",
+   "duracion_normal": 7,
+   "costo_aceleracion": 4,
+   "reduccion_tiempo_si_acelera": 3,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R03"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 4,
+     "riesgos_cubiertos": [
+      "R03"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 7,
+     "riesgos_cubiertos": [
+      "R03"
+     ]
+    }
+   ]
+  }
+ ]
+}

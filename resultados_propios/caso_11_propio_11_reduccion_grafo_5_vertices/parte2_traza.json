@@ -1,0 +1,115 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_11_reduccion_grafo_5_vertices",
+  "archivo": "propio_11_reduccion_grafo_5_vertices.json",
+  "metodo": "voraz_mayor_ganancia",
+  "desempate": "gana el candidato que aparece primero en la entrada",
+  "vueltas": [
+    {
+      "vuelta": 1,
+      "elegida": "b",
+      "ganancia": 3,
+      "categorias_nuevas": [
+        "R01",
+        "R03",
+        "R04"
+      ],
+      "cubiertas_acumuladas": 3,
+      "faltan": 3,
+      "categorias_faltantes": [
+        "R02",
+        "R05",
+        "R06"
+      ],
+      "empatadas_que_perdieron_por_desempate": [
+        "c"
+      ],
+      "mejores_candidatos_de_la_vuelta": [
+        {
+          "candidato": "b",
+          "ganancia": 3
+        },
+        {
+          "candidato": "c",
+          "ganancia": 3
+        },
+        {
+          "candidato": "a",
+          "ganancia": 2
+        },
+        {
+          "candidato": "d",
+          "ganancia": 2
+        },
+        {
+          "candidato": "e",
+          "ganancia": 2
+        }
+      ]
+    },
+    {
+      "vuelta": 2,
+      "elegida": "c",
+      "ganancia": 2,
+      "categorias_nuevas": [
+        "R02",
+        "R05"
+      ],
+      "cubiertas_acumuladas": 5,
+      "faltan": 1,
+      "categorias_faltantes": [
+        "R06"
+      ],
+      "empatadas_que_perdieron_por_desempate": [
+        "e"
+      ],
+      "mejores_candidatos_de_la_vuelta": [
+        {
+          "candidato": "c",
+          "ganancia": 2
+        },
+        {
+          "candidato": "e",
+          "ganancia": 2
+        },
+        {
+          "candidato": "a",
+          "ganancia": 1
+        },
+        {
+          "candidato": "d",
+          "ganancia": 1
+        }
+      ]
+    },
+    {
+      "vuelta": 3,
+      "elegida": "d",
+      "ganancia": 1,
+      "categorias_nuevas": [
+        "R06"
+      ],
+      "cubiertas_acumuladas": 6,
+      "faltan": 0,
+      "categorias_faltantes": [],
+      "empatadas_que_perdieron_por_desempate": [
+        "e"
+      ],
+      "mejores_candidatos_de_la_vuelta": [
+        {
+          "candidato": "d",
+          "ganancia": 1
+        },
+        {
+          "candidato": "e",
+          "ganancia": 1
+        },
+        {
+          "candidato": "a",
+          "ganancia": 0
+        }
+      ]
+    }
+  ]
+}

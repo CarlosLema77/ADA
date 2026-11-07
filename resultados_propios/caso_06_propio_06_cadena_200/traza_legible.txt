@@ -1,0 +1,222 @@
+CASO propio_06_cadena_200  (versión entrega1-1.1)
+n = 200 etapas, r = 30 categorías, B = 1500, aristas del flujo = 199
+
+== PARTE 1: aceleración ==
+método: programacion_dinamica_cadena
+recurrencia: DP[i][b] = max(DP[i-1][b], DP[i-1][b-c_i] + d_i) si c_i <= b; si no, DP[i-1][b]
+tabla DP: 201 filas x 1501 columnas
+reconstrucción hacia atrás (de la última etapa a la primera):
+  etapa  presupuesto_antes  DP[i][b]  decisión   costo  ahorro  presupuesto_después
+  E200                1500         -  ACELERAR       6       8                1494
+  E199                1494         -  ACELERAR       6       5                1488
+  E198                1488         -  ACELERAR      11       9                1477
+  E197                1477         -  no              0       0                1477
+  E196                1477         -  ACELERAR       9      10                1468
+  E195                1468         -  ACELERAR      15       9                1453
+  E194                1453         -  ACELERAR      12       8                1441
+  E193                1441         -  ACELERAR       8      11                1433
+  E192                1433         -  ACELERAR       6       9                1427
+  E191                1427         -  ACELERAR       6      11                1421
+  E190                1421         -  no              0       0                1421
+  E189                1421         -  ACELERAR       8       5                1413
+  E188                1413         -  ACELERAR      16       9                1397
+  E187                1397         -  ACELERAR       8       4                1389
+  E186                1389         -  ACELERAR       4      11                1385
+  E185                1385         -  no              0       0                1385
+  E184                1385         -  ACELERAR      14       9                1371
+  E183                1371         -  no              0       0                1371
+  E182                1371         -  ACELERAR       4       8                1367
+  E181                1367         -  ACELERAR      13       7                1354
+  E180                1354         -  ACELERAR      14      10                1340
+  E179                1340         -  no              0       0                1340
+  E178                1340         -  ACELERAR      17       8                1323
+  E177                1323         -  no              0       0                1323
+  E176                1323         -  ACELERAR       6      13                1317
+  E175                1317         -  ACELERAR       6       9                1311
+  E174                1311         -  ACELERAR      15      13                1296
+  E173                1296         -  ACELERAR       6       7                1290
+  E172                1290         -  no              0       0                1290
+  E171                1290         -  ACELERAR      12       9                1278
+  E170                1278         -  ACELERAR      13       6                1265
+  E169                1265         -  ACELERAR       6       4                1259
+  E168                1259         -  ACELERAR       7      13                1252
+  E167                1252         -  ACELERAR      12       7                1240
+  E166                1240         -  ACELERAR      15      13                1225
+  E165                1225         -  no              0       0                1225
+  E164                1225         -  ACELERAR      12      10                1213
+  E163                1213         -  ACELERAR      10      11                1203
+  E162                1203         -  no              0       0                1203
+  E161                1203         -  ACELERAR       9      13                1194
+  E160                1194         -  no              0       0                1194
+  E159                1194         -  no              0       0                1194
+  E158                1194         -  no              0       0                1194
+  E157                1194         -  ACELERAR      14      10                1180
+  E156                1180         -  no              0       0                1180
+  E155                1180         -  no              0       0                1180
+  E154                1180         -  ACELERAR      11       8                1169
+  E153                1169         -  no              0       0                1169
+  E152                1169         -  no              0       0                1169
+  E151                1169         -  no              0       0                1169
+  E150                1169         -  ACELERAR       8       7                1161
+  E149                1161         -  no              0       0                1161
+  E148                1161         -  no              0       0                1161
+  E147                1161         -  ACELERAR       7      10                1154
+  E146                1154         -  ACELERAR      12       9                1142
+  E145                1142         -  ACELERAR       6      11                1136
+  E144                1136         -  ACELERAR      12       9                1124
+  E143                1124         -  ACELERAR      17      11                1107
+  E142                1107         -  ACELERAR      12      12                1095
+  E141                1095         -  ACELERAR      10       8                1085
+  E140                1085         -  ACELERAR       7       3                1078
+  E139                1078         -  ACELERAR       7      11                1071
+  E138                1071         -  ACELERAR      11       9                1060
+  E137                1060         -  ACELERAR       4      10                1056
+  E136                1056         -  ACELERAR       7       3                1049
+  E135                1049         -  no              0       0                1049
+  E134                1049         -  ACELERAR       5      11                1044
+  E133                1044         -  no              0       0                1044
+  E132                1044         -  no              0       0                1044
+  E131                1044         -  no              0       0                1044
+  E130                1044         -  ACELERAR      12       6                1032
+  E129                1032         -  no              0       0                1032
+  E128                1032         -  ACELERAR      17      10                1015
+  E127                1015         -  ACELERAR       8      10                1007
+  E126                1007         -  ACELERAR      16      10                 991
+  E125                 991         -  ACELERAR       6       7                 985
+  E124                 985         -  ACELERAR      16       9                 969
+  E123                 969         -  ACELERAR      17       9                 952
+  E122                 952         -  no              0       0                 952
+  E121                 952         -  ACELERAR       5      12                 947
+  E120                 947         -  ACELERAR       6       6                 941
+  E119                 941         -  ACELERAR       9       7                 932
+  E118                 932         -  ACELERAR       9      10                 923
+  E117                 923         -  ACELERAR      14      12                 909
+  E116                 909         -  ACELERAR       9      13                 900
+  E115                 900         -  no              0       0                 900
+  E114                 900         -  ACELERAR       9      11                 891
+  E113                 891         -  ACELERAR      13      12                 878
+  E112                 878         -  ACELERAR      12      11                 866
+  E111                 866         -  ACELERAR      12       8                 854
+  E110                 854         -  ACELERAR      17       9                 837
+  E109                 837         -  ACELERAR       5       7                 832
+  E108                 832         -  no              0       0                 832
+  E107                 832         -  ACELERAR      11      10                 821
+  E106                 821         -  ACELERAR       8       4                 813
+  E105                 813         -  no              0       0                 813
+  E104                 813         -  no              0       0                 813
+  E103                 813         -  ACELERAR      12       9                 801
+  E102                 801         -  ACELERAR      14       7                 787
+  E101                 787         -  ACELERAR      12       6                 775
+  E100                 775         -  ACELERAR      14       9                 761
+  E99                  761         -  ACELERAR      14      10                 747
+  E98                  747         -  ACELERAR      15       9                 732
+  E97                  732         -  no              0       0                 732
+  E96                  732         -  ACELERAR       5       8                 727
+  E95                  727         -  ACELERAR      17       7                 710
+  E94                  710         -  ACELERAR      10      13                 700
+  E93                  700         -  no              0       0                 700
+  E92                  700         -  ACELERAR       4       6                 696
+  E91                  696         -  ACELERAR      13      12                 683
+  E90                  683         -  ACELERAR       7      12                 676
+  E89                  676         -  ACELERAR       8       4                 668
+  E88                  668         -  ACELERAR      10      10                 658
+  E87                  658         -  no              0       0                 658
+  E86                  658         -  ACELERAR      17       8                 641
+  E85                  641         -  ACELERAR      12       5                 629
+  E84                  629         -  ACELERAR       8       8                 621
+  E83                  621         -  ACELERAR       9      12                 612
+  E82                  612         -  ACELERAR       7       5                 605
+  E81                  605         -  no              0       0                 605
+  E80                  605         -  no              0       0                 605
+  E79                  605         -  no              0       0                 605
+  E78                  605         -  ACELERAR       8      13                 597
+  E77                  597         -  ACELERAR       9      11                 588
+  E76                  588         -  ACELERAR      16      12                 572
+  E75                  572         -  ACELERAR      11      13                 561
+  E74                  561         -  ACELERAR       4       7                 557
+  E73                  557         -  ACELERAR       6       3                 551
+  E72                  551         -  no              0       0                 551
+  E71                  551         -  ACELERAR      14       5                 537
+  E70                  537         -  ACELERAR       4      13                 533
+  E69                  533         -  ACELERAR       8       5                 525
+  E68                  525         -  no              0       0                 525
+  E67                  525         -  ACELERAR       9       9                 516
+  E66                  516         -  ACELERAR      11      11                 505
+  E65                  505         -  ACELERAR       8      10                 497
+  E64                  497         -  ACELERAR      11       9                 486
+  E63                  486         -  ACELERAR      13      13                 473
+  E62                  473         -  ACELERAR       9      12                 464
+  E61                  464         -  ACELERAR       9       6                 455
+  E60                  455         -  ACELERAR       9       5                 446
+  E59                  446         -  ACELERAR       9      13                 437
+  E58                  437         -  ACELERAR      14       7                 423
+  E57                  423         -  ACELERAR      14       9                 409
+  E56                  409         -  ACELERAR      11       8                 398
+  E55                  398         -  ACELERAR       7      13                 391
+  E54                  391         -  ACELERAR      12       8                 379
+  E53                  379         -  ACELERAR      15      10                 364
+  E52                  364         -  no              0       0                 364
+  E51                  364         -  ACELERAR       6       7                 358
+  E50                  358         -  ACELERAR       4       5                 354
+  E49                  354         -  ACELERAR      10       9                 344
+  E48                  344         -  ACELERAR       8      12                 336
+  E47                  336         -  ACELERAR       4       5                 332
+  E46                  332         -  ACELERAR       5       5                 327
+  E45                  327         -  ACELERAR       6       4                 321
+  E44                  321         -  ACELERAR      12       5                 309
+  E43                  309         -  ACELERAR      13       8                 296
+  E42                  296         -  ACELERAR      14      12                 282
+  E41                  282         -  ACELERAR      12       8                 270
+  E40                  270         -  no              0       0                 270
+  E39                  270         -  ACELERAR      10       5                 260
+  E38                  260         -  ACELERAR      13      10                 247
+  E37                  247         -  ACELERAR       5       4                 242
+  E36                  242         -  no              0       0                 242
+  E35                  242         -  ACELERAR      15       7                 227
+  E34                  227         -  ACELERAR       6       6                 221
+  E33                  221         -  ACELERAR      14      13                 207
+  E32                  207         -  ACELERAR      13      13                 194
+  E31                  194         -  ACELERAR       7      11                 187
+  E30                  187         -  ACELERAR      11       7                 176
+  E29                  176         -  ACELERAR       7       3                 169
+  E28                  169         -  no              0       0                 169
+  E27                  169         -  no              0       0                 169
+  E26                  169         -  ACELERAR       5       9                 164
+  E25                  164         -  ACELERAR       4       2                 160
+  E24                  160         -  ACELERAR      16      10                 144
+  E23                  144         -  no              0       0                 144
+  E22                  144         -  ACELERAR       7       7                 137
+  E21                  137         -  no              0       0                 137
+  E20                  137         -  ACELERAR      12       8                 125
+  E19                  125         -  ACELERAR       5      13                 120
+  E18                  120         -  ACELERAR       9      12                 111
+  E17                  111         -  ACELERAR      14       9                  97
+  E16                   97         -  no              0       0                  97
+  E15                   97         -  ACELERAR       8      10                  89
+  E14                   89         -  ACELERAR      12       7                  77
+  E13                   77         -  ACELERAR      11      10                  66
+  E12                   66         -  no              0       0                  66
+  E11                   66         -  ACELERAR       7       6                  59
+  E10                   59         -  no              0       0                  59
+  E09                   59         -  ACELERAR       4      10                  55
+  E08                   55         -  ACELERAR       9       9                  46
+  E07                   46         -  ACELERAR       8      11                  38
+  E06                   38         -  ACELERAR      17       8                  21
+  E05                   21         -  no              0       0                  21
+  E04                   21         -  ACELERAR       5      12                  16
+  E03                   16         -  no              0       0                  16
+  E02                   16         -  no              0       0                  16
+  E01                   16         -  ACELERAR      16      13                   0
+etapas aceleradas: ['E01', 'E04', 'E06', 'E07', 'E08', 'E09', 'E11', 'E13', 'E14', 'E15', 'E17', 'E18', 'E19', 'E20', 'E22', 'E24', 'E25', 'E26', 'E29', 'E30', 'E31', 'E32', 'E33', 'E34', 'E35', 'E37', 'E38', 'E39', 'E41', 'E42', 'E43', 'E44', 'E45', 'E46', 'E47', 'E48', 'E49', 'E50', 'E51', 'E53', 'E54', 'E55', 'E56', 'E57', 'E58', 'E59', 'E60', 'E61', 'E62', 'E63', 'E64', 'E65', 'E66', 'E67', 'E69', 'E70', 'E71', 'E73', 'E74', 'E75', 'E76', 'E77', 'E78', 'E82', 'E83', 'E84', 'E85', 'E86', 'E88', 'E89', 'E90', 'E91', 'E92', 'E94', 'E95', 'E96', 'E98', 'E99', 'E100', 'E101', 'E102', 'E103', 'E106', 'E107', 'E109', 'E110', 'E111', 'E112', 'E113', 'E114', 'E116', 'E117', 'E118', 'E119', 'E120', 'E121', 'E123', 'E124', 'E125', 'E126', 'E127', 'E128', 'E130', 'E134', 'E136', 'E137', 'E138', 'E139', 'E140', 'E141', 'E142', 'E143', 'E144', 'E145', 'E146', 'E147', 'E150', 'E154', 'E157', 'E161', 'E163', 'E164', 'E166', 'E167', 'E168', 'E169', 'E170', 'E171', 'E173', 'E174', 'E175', 'E176', 'E178', 'E180', 'E181', 'E182', 'E184', 'E186', 'E187', 'E188', 'E189', 'E191', 'E192', 'E193', 'E194', 'E195', 'E196', 'E198', 'E199', 'E200']
+costo usado = 1500 de B = 1500; duración 4594 -> 3270  (ahorro 1324); óptimo probado: True
+
+== PARTE 2: cobertura de auditoría ==
+método: voraz de mayor ganancia (desempate: gana el candidato que aparece primero en la entrada)
+  vuelta 1: elige E01 (ganancia 6), cubre nuevas ['R02', 'R05', 'R10', 'R15', 'R17', 'R26']; cubiertas 6/30, faltan 24
+  vuelta 2: elige E25 (ganancia 6), cubre nuevas ['R06', 'R08', 'R18', 'R20', 'R28', 'R29']; cubiertas 12/30, faltan 18
+  vuelta 3: elige E183 (ganancia 6), cubre nuevas ['R04', 'R12', 'R13', 'R16', 'R21', 'R23']; cubiertas 18/30, faltan 12
+  vuelta 4: elige E18 (ganancia 4), cubre nuevas ['R01', 'R03', 'R07', 'R09']; cubiertas 22/30, faltan 8
+  vuelta 5: elige E39 (ganancia 4), cubre nuevas ['R19', 'R22', 'R24', 'R30']; cubiertas 26/30, faltan 4
+  vuelta 6: elige E66 (ganancia 3), cubre nuevas ['R11', 'R14', 'R27']; cubiertas 29/30, faltan 1
+  vuelta 7: elige E03 (ganancia 1), cubre nuevas ['R25']; cubiertas 30/30, faltan 0
+interacciones elegidas: ['E01', 'E25', 'E183', 'E18', 'E39', 'E66', 'E03']  (tamaño 7)

@@ -1,0 +1,20 @@
+CASO propio_05_rutas_paralelas_30  (versión entrega1-1.1)
+n = 30 etapas, r = 15 categorías, B = 100, aristas del flujo = 42
+
+== PARTE 1: aceleración ==
+método: ramificacion_y_acotamiento
+candidatas=30  nodos explorados=413  podas por cota=193  duración inicial (voraz)=199
+  mejora en el nodo 322: duración 197 con costo 97
+etapas aceleradas: ['E04', 'E07', 'E12', 'E15', 'E17', 'E19', 'E20', 'E24', 'E27', 'E28']
+costo usado = 97 de B = 100; duración 264 -> 197  (ahorro 67); óptimo probado: True
+
+== PARTE 2: cobertura de auditoría ==
+método: voraz de mayor ganancia (desempate: gana el candidato que aparece primero en la entrada)
+  vuelta 1: elige E03 (ganancia 4), cubre nuevas ['R03', 'R05', 'R13', 'R15']; cubiertas 4/15, faltan 11
+  vuelta 2: elige E05 (ganancia 3), cubre nuevas ['R07', 'R08', 'R09']; cubiertas 7/15, faltan 8
+  vuelta 3: elige E14 (ganancia 3), cubre nuevas ['R04', 'R06', 'R12']; cubiertas 10/15, faltan 5
+  vuelta 4: elige E10 (ganancia 2), cubre nuevas ['R01', 'R11']; cubiertas 12/15, faltan 3
+  vuelta 5: elige E07 (ganancia 1), cubre nuevas ['R14']; cubiertas 13/15, faltan 2
+  vuelta 6: elige E27 (ganancia 1), cubre nuevas ['R10']; cubiertas 14/15, faltan 1
+  vuelta 7: elige E29 (ganancia 1), cubre nuevas ['R02']; cubiertas 15/15, faltan 0
+interacciones elegidas: ['E03', 'E05', 'E14', 'E10', 'E07', 'E27', 'E29']  (tamaño 7)

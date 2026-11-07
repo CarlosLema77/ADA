@@ -1,0 +1,1784 @@
+{
+ "_descripcion": "Caso exigente: 40 etapas por capas de ancho 8 (135 aristas). Muestra que en flujos con muchas rutas paralelas el solver exacto puede necesitar muchos nodos (el problema es NP-difícil).",
+ "parametros": {
+  "numero_etapas": 40,
+  "presupuesto_aceleracion_B": 150,
+  "presupuesto_conjunto_aceleracion_y_auditoria": 180,
+  "numero_categorias_riesgo": 20
+ },
+ "flujo": [
+  {
+   "origen": "E01",
+   "destino": "E09"
+  },
+  {
+   "origen": "E01",
+   "destino": "E10"
+  },
+  {
+   "origen": "E01",
+   "destino": "E11"
+  },
+  {
+   "origen": "E01",
+   "destino": "E12"
+  },
+  {
+   "origen": "E01",
+   "destino": "E16"
+  },
+  {
+   "origen": "E02",
+   "destino": "E09"
+  },
+  {
+   "origen": "E02",
+   "destino": "E11"
+  },
+  {
+   "origen": "E02",
+   "destino": "E13"
+  },
+  {
+   "origen": "E02",
+   "destino": "E15"
+  },
+  {
+   "origen": "E02",
+   "destino": "E16"
+  },
+  {
+   "origen": "E03",
+   "destino": "E10"
+  },
+  {
+   "origen": "E03",
+   "destino": "E11"
+  },
+  {
+   "origen": "E03",
+   "destino": "E15"
+  },
+  {
+   "origen": "E03",
+   "destino": "E16"
+  },
+  {
+   "origen": "E04",
+   "destino": "E09"
+  },
+  {
+   "origen": "E04",
+   "destino": "E10"
+  },
+  {
+   "origen": "E04",
+   "destino": "E15"
+  },
+  {
+   "origen": "E04",
+   "destino": "E16"
+  },
+  {
+   "origen": "E05",
+   "destino": "E10"
+  },
+  {
+   "origen": "E05",
+   "destino": "E12"
+  },
+  {
+   "origen": "E05",
+   "destino": "E14"
+  },
+  {
+   "origen": "E05",
+   "destino": "E15"
+  },
+  {
+   "origen": "E05",
+   "destino": "E16"
+  },
+  {
+   "origen": "E06",
+   "destino": "E09"
+  },
+  {
+   "origen": "E06",
+   "destino": "E10"
+  },
+  {
+   "origen": "E06",
+   "destino": "E11"
+  },
+  {
+   "origen": "E06",
+   "destino": "E12"
+  },
+  {
+   "origen": "E06",
+   "destino": "E13"
+  },
+  {
+   "origen": "E06",
+   "destino": "E14"
+  },
+  {
+   "origen": "E07",
+   "destino": "E10"
+  },
+  {
+   "origen": "E07",
+   "destino": "E11"
+  },
+  {
+   "origen": "E07",
+   "destino": "E12"
+  },
+  {
+   "origen": "E07",
+   "destino": "E14"
+  },
+  {
+   "origen": "E07",
+   "destino": "E15"
+  },
+  {
+   "origen": "E07",
+   "destino": "E16"
+  },
+  {
+   "origen": "E08",
+   "destino": "E09"
+  },
+  {
+   "origen": "E08",
+   "destino": "E10"
+  },
+  {
+   "origen": "E08",
+   "destino": "E14"
+  },
+  {
+   "origen": "E08",
+   "destino": "E15"
+  },
+  {
+   "origen": "E09",
+   "destino": "E17"
+  },
+  {
+   "origen": "E09",
+   "destino": "E20"
+  },
+  {
+   "origen": "E09",
+   "destino": "E22"
+  },
+  {
+   "origen": "E10",
+   "destino": "E19"
+  },
+  {
+   "origen": "E10",
+   "destino": "E21"
+  },
+  {
+   "origen": "E10",
+   "destino": "E23"
+  },
+  {
+   "origen": "E11",
+   "destino": "E19"
+  },
+  {
+   "origen": "E11",
+   "destino": "E20"
+  },
+  {
+   "origen": "E11",
+   "destino": "E21"
+  },
+  {
+   "origen": "E11",
+   "destino": "E22"
+  },
+  {
+   "origen": "E11",
+   "destino": "E23"
+  },
+  {
+   "origen": "E12",
+   "destino": "E17"
+  },
+  {
+   "origen": "E12",
+   "destino": "E19"
+  },
+  {
+   "origen": "E12",
+   "destino": "E20"
+  },
+  {
+   "origen": "E12",
+   "destino": "E21"
+  },
+  {
+   "origen": "E12",
+   "destino": "E22"
+  },
+  {
+   "origen": "E12",
+   "destino": "E24"
+  },
+  {
+   "origen": "E13",
+   "destino": "E19"
+  },
+  {
+   "origen": "E13",
+   "destino": "E20"
+  },
+  {
+   "origen": "E13",
+   "destino": "E21"
+  },
+  {
+   "origen": "E13",
+   "destino": "E22"
+  },
+  {
+   "origen": "E14",
+   "destino": "E18"
+  },
+  {
+   "origen": "E14",
+   "destino": "E19"
+  },
+  {
+   "origen": "E14",
+   "destino": "E20"
+  },
+  {
+   "origen": "E14",
+   "destino": "E21"
+  },
+  {
+   "origen": "E14",
+   "destino": "E24"
+  },
+  {
+   "origen": "E15",
+   "destino": "E19"
+  },
+  {
+   "origen": "E15",
+   "destino": "E20"
+  },
+  {
+   "origen": "E15",
+   "destino": "E21"
+  },
+  {
+   "origen": "E15",
+   "destino": "E22"
+  },
+  {
+   "origen": "E16",
+   "destino": "E17"
+  },
+  {
+   "origen": "E16",
+   "destino": "E18"
+  },
+  {
+   "origen": "E16",
+   "destino": "E21"
+  },
+  {
+   "origen": "E16",
+   "destino": "E22"
+  },
+  {
+   "origen": "E17",
+   "destino": "E26"
+  },
+  {
+   "origen": "E17",
+   "destino": "E32"
+  },
+  {
+   "origen": "E18",
+   "destino": "E26"
+  },
+  {
+   "origen": "E18",
+   "destino": "E27"
+  },
+  {
+   "origen": "E18",
+   "destino": "E28"
+  },
+  {
+   "origen": "E18",
+   "destino": "E29"
+  },
+  {
+   "origen": "E18",
+   "destino": "E31"
+  },
+  {
+   "origen": "E19",
+   "destino": "E25"
+  },
+  {
+   "origen": "E19",
+   "destino": "E27"
+  },
+  {
+   "origen": "E19",
+   "destino": "E30"
+  },
+  {
+   "origen": "E20",
+   "destino": "E25"
+  },
+  {
+   "origen": "E20",
+   "destino": "E26"
+  },
+  {
+   "origen": "E20",
+   "destino": "E28"
+  },
+  {
+   "origen": "E20",
+   "destino": "E29"
+  },
+  {
+   "origen": "E20",
+   "destino": "E32"
+  },
+  {
+   "origen": "E21",
+   "destino": "E27"
+  },
+  {
+   "origen": "E21",
+   "destino": "E29"
+  },
+  {
+   "origen": "E22",
+   "destino": "E25"
+  },
+  {
+   "origen": "E22",
+   "destino": "E28"
+  },
+  {
+   "origen": "E22",
+   "destino": "E30"
+  },
+  {
+   "origen": "E22",
+   "destino": "E31"
+  },
+  {
+   "origen": "E22",
+   "destino": "E32"
+  },
+  {
+   "origen": "E23",
+   "destino": "E27"
+  },
+  {
+   "origen": "E23",
+   "destino": "E28"
+  },
+  {
+   "origen": "E23",
+   "destino": "E29"
+  },
+  {
+   "origen": "E23",
+   "destino": "E30"
+  },
+  {
+   "origen": "E23",
+   "destino": "E31"
+  },
+  {
+   "origen": "E24",
+   "destino": "E27"
+  },
+  {
+   "origen": "E24",
+   "destino": "E29"
+  },
+  {
+   "origen": "E24",
+   "destino": "E31"
+  },
+  {
+   "origen": "E25",
+   "destino": "E34"
+  },
+  {
+   "origen": "E25",
+   "destino": "E37"
+  },
+  {
+   "origen": "E25",
+   "destino": "E38"
+  },
+  {
+   "origen": "E26",
+   "destino": "E33"
+  },
+  {
+   "origen": "E26",
+   "destino": "E39"
+  },
+  {
+   "origen": "E26",
+   "destino": "E40"
+  },
+  {
+   "origen": "E27",
+   "destino": "E34"
+  },
+  {
+   "origen": "E27",
+   "destino": "E35"
+  },
+  {
+   "origen": "E27",
+   "destino": "E40"
+  },
+  {
+   "origen": "E28",
+   "destino": "E34"
+  },
+  {
+   "origen": "E29",
+   "destino": "E37"
+  },
+  {
+   "origen": "E29",
+   "destino": "E40"
+  },
+  {
+   "origen": "E30",
+   "destino": "E33"
+  },
+  {
+   "origen": "E30",
+   "destino": "E34"
+  },
+  {
+   "origen": "E30",
+   "destino": "E35"
+  },
+  {
+   "origen": "E30",
+   "destino": "E36"
+  },
+  {
+   "origen": "E30",
+   "destino": "E38"
+  },
+  {
+   "origen": "E30",
+   "destino": "E39"
+  },
+  {
+   "origen": "E30",
+   "destino": "E40"
+  },
+  {
+   "origen": "E31",
+   "destino": "E35"
+  },
+  {
+   "origen": "E31",
+   "destino": "E40"
+  },
+  {
+   "origen": "E32",
+   "destino": "E34"
+  },
+  {
+   "origen": "E32",
+   "destino": "E36"
+  },
+  {
+   "origen": "E32",
+   "destino": "E38"
+  },
+  {
+   "origen": "E32",
+   "destino": "E39"
+  }
+ ],
+ "categorias_riesgo": [
+  {
+   "id": "R01",
+   "categoria": "sesgo",
+   "importancia": 1
+  },
+  {
+   "id": "R02",
+   "categoria": "privacidad",
+   "importancia": 3
+  },
+  {
+   "id": "R03",
+   "categoria": "formato",
+   "importancia": 5
+  },
+  {
+   "id": "R04",
+   "categoria": "alucinacion",
+   "importancia": 2
+  },
+  {
+   "id": "R05",
+   "categoria": "toxicidad",
+   "importancia": 4
+  },
+  {
+   "id": "R06",
+   "categoria": "seguridad",
+   "importancia": 1
+  },
+  {
+   "id": "R07",
+   "categoria": "trazabilidad",
+   "importancia": 3
+  },
+  {
+   "id": "R08",
+   "categoria": "equidad",
+   "importancia": 5
+  },
+  {
+   "id": "R09",
+   "categoria": "integridad",
+   "importancia": 2
+  },
+  {
+   "id": "R10",
+   "categoria": "transparencia",
+   "importancia": 4
+  },
+  {
+   "id": "R11",
+   "categoria": "sesgo_10",
+   "importancia": 1
+  },
+  {
+   "id": "R12",
+   "categoria": "privacidad_11",
+   "importancia": 3
+  },
+  {
+   "id": "R13",
+   "categoria": "formato_12",
+   "importancia": 5
+  },
+  {
+   "id": "R14",
+   "categoria": "alucinacion_13",
+   "importancia": 2
+  },
+  {
+   "id": "R15",
+   "categoria": "toxicidad_14",
+   "importancia": 4
+  },
+  {
+   "id": "R16",
+   "categoria": "seguridad_15",
+   "importancia": 1
+  },
+  {
+   "id": "R17",
+   "categoria": "trazabilidad_16",
+   "importancia": 3
+  },
+  {
+   "id": "R18",
+   "categoria": "equidad_17",
+   "importancia": 5
+  },
+  {
+   "id": "R19",
+   "categoria": "integridad_18",
+   "importancia": 2
+  },
+  {
+   "id": "R20",
+   "categoria": "transparencia_19",
+   "importancia": 4
+  }
+ ],
+ "etapas": [
+  {
+   "id": "E01",
+   "duracion_normal": 21,
+   "costo_aceleracion": 4,
+   "reduccion_tiempo_si_acelera": 5,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R02",
+    "R08"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 2,
+     "riesgos_cubiertos": [
+      "R02"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R02",
+      "R08"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E02",
+   "duracion_normal": 18,
+   "costo_aceleracion": 15,
+   "reduccion_tiempo_si_acelera": 11,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R01",
+    "R07"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 3,
+     "riesgos_cubiertos": [
+      "R01"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 6,
+     "riesgos_cubiertos": [
+      "R01",
+      "R07"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E03",
+   "duracion_normal": 33,
+   "costo_aceleracion": 11,
+   "reduccion_tiempo_si_acelera": 11,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R07",
+    "R17"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 4,
+     "riesgos_cubiertos": [
+      "R07"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 7,
+     "riesgos_cubiertos": [
+      "R07",
+      "R17"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E04",
+   "duracion_normal": 25,
+   "costo_aceleracion": 9,
+   "reduccion_tiempo_si_acelera": 12,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R13",
+    "R14"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R13"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 8,
+     "riesgos_cubiertos": [
+      "R13",
+      "R14"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E05",
+   "duracion_normal": 11,
+   "costo_aceleracion": 11,
+   "reduccion_tiempo_si_acelera": 9,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R08",
+    "R12",
+    "R15",
+    "R16",
+    "R20"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 2,
+     "riesgos_cubiertos": [
+      "R08",
+      "R12"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R08",
+      "R12",
+      "R15",
+      "R16",
+      "R20"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E06",
+   "duracion_normal": 30,
+   "costo_aceleracion": 6,
+   "reduccion_tiempo_si_acelera": 4,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R04",
+    "R05",
+    "R19",
+    "R20"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 3,
+     "riesgos_cubiertos": [
+      "R04",
+      "R05"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 6,
+     "riesgos_cubiertos": [
+      "R04",
+      "R05",
+      "R19",
+      "R20"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E07",
+   "duracion_normal": 22,
+   "costo_aceleracion": 5,
+   "reduccion_tiempo_si_acelera": 6,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R05",
+    "R12"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 4,
+     "riesgos_cubiertos": [
+      "R05"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 7,
+     "riesgos_cubiertos": [
+      "R05",
+      "R12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E08",
+   "duracion_normal": 25,
+   "costo_aceleracion": 10,
+   "reduccion_tiempo_si_acelera": 12,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R16"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R16"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 8,
+     "riesgos_cubiertos": [
+      "R16"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E09",
+   "duracion_normal": 24,
+   "costo_aceleracion": 16,
+   "reduccion_tiempo_si_acelera": 8,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R14"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 2,
+     "riesgos_cubiertos": [
+      "R14"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R14"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E10",
+   "duracion_normal": 26,
+   "costo_aceleracion": 6,
+   "reduccion_tiempo_si_acelera": 5,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R09",
+    "R10",
+    "R13"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 3,
+     "riesgos_cubiertos": [
+      "R09"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 6,
+     "riesgos_cubiertos": [
+      "R09",
+      "R10",
+      "R13"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E11",
+   "duracion_normal": 10,
+   "costo_aceleracion": 8,
+   "reduccion_tiempo_si_acelera": 9,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R04",
+    "R09",
+    "R11",
+    "R13",
+    "R19"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 4,
+     "riesgos_cubiertos": [
+      "R04",
+      "R09"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 7,
+     "riesgos_cubiertos": [
+      "R04",
+      "R09",
+      "R11",
+      "R13",
+      "R19"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E12",
+   "duracion_normal": 21,
+   "costo_aceleracion": 7,
+   "reduccion_tiempo_si_acelera": 8,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R03",
+    "R07",
+    "R11",
+    "R16",
+    "R18"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R03",
+      "R07"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 8,
+     "riesgos_cubiertos": [
+      "R03",
+      "R07",
+      "R11",
+      "R16",
+      "R18"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E13",
+   "duracion_normal": 24,
+   "costo_aceleracion": 15,
+   "reduccion_tiempo_si_acelera": 9,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R14",
+    "R15",
+    "R18"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 2,
+     "riesgos_cubiertos": [
+      "R14"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R14",
+      "R15",
+      "R18"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E14",
+   "duracion_normal": 22,
+   "costo_aceleracion": 10,
+   "reduccion_tiempo_si_acelera": 5,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R05",
+    "R09"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 3,
+     "riesgos_cubiertos": [
+      "R05"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 6,
+     "riesgos_cubiertos": [
+      "R05",
+      "R09"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E15",
+   "duracion_normal": 33,
+   "costo_aceleracion": 15,
+   "reduccion_tiempo_si_acelera": 9,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R01",
+    "R04",
+    "R09",
+    "R16"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 4,
+     "riesgos_cubiertos": [
+      "R01",
+      "R04"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 7,
+     "riesgos_cubiertos": [
+      "R01",
+      "R04",
+      "R09",
+      "R16"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E16",
+   "duracion_normal": 35,
+   "costo_aceleracion": 10,
+   "reduccion_tiempo_si_acelera": 13,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R02",
+    "R03",
+    "R04",
+    "R06",
+    "R20"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R02",
+      "R03"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 8,
+     "riesgos_cubiertos": [
+      "R02",
+      "R03",
+      "R04",
+      "R06",
+      "R20"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E17",
+   "duracion_normal": 18,
+   "costo_aceleracion": 11,
+   "reduccion_tiempo_si_acelera": 10,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R02",
+    "R04",
+    "R08",
+    "R10",
+    "R19"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 2,
+     "riesgos_cubiertos": [
+      "R02",
+      "R04"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R02",
+      "R04",
+      "R08",
+      "R10",
+      "R19"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E18",
+   "duracion_normal": 13,
+   "costo_aceleracion": 8,
+   "reduccion_tiempo_si_acelera": 12,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R05",
+    "R08",
+    "R14"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 3,
+     "riesgos_cubiertos": [
+      "R05"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 6,
+     "riesgos_cubiertos": [
+      "R05",
+      "R08",
+      "R14"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E19",
+   "duracion_normal": 27,
+   "costo_aceleracion": 9,
+   "reduccion_tiempo_si_acelera": 7,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R13"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 4,
+     "riesgos_cubiertos": [
+      "R13"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 7,
+     "riesgos_cubiertos": [
+      "R13"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E20",
+   "duracion_normal": 11,
+   "costo_aceleracion": 7,
+   "reduccion_tiempo_si_acelera": 5,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R03",
+    "R10",
+    "R15"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R03"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 8,
+     "riesgos_cubiertos": [
+      "R03",
+      "R10",
+      "R15"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E21",
+   "duracion_normal": 11,
+   "costo_aceleracion": 11,
+   "reduccion_tiempo_si_acelera": 2,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R06",
+    "R07",
+    "R08"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 2,
+     "riesgos_cubiertos": [
+      "R06"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R06",
+      "R07",
+      "R08"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E22",
+   "duracion_normal": 16,
+   "costo_aceleracion": 4,
+   "reduccion_tiempo_si_acelera": 6,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R15",
+    "R19"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 3,
+     "riesgos_cubiertos": [
+      "R15"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 6,
+     "riesgos_cubiertos": [
+      "R15",
+      "R19"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E23",
+   "duracion_normal": 19,
+   "costo_aceleracion": 14,
+   "reduccion_tiempo_si_acelera": 4,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R09",
+    "R10",
+    "R16"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 4,
+     "riesgos_cubiertos": [
+      "R09"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 7,
+     "riesgos_cubiertos": [
+      "R09",
+      "R10",
+      "R16"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E24",
+   "duracion_normal": 29,
+   "costo_aceleracion": 12,
+   "reduccion_tiempo_si_acelera": 9,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R14",
+    "R16",
+    "R17"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R14"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 8,
+     "riesgos_cubiertos": [
+      "R14",
+      "R16",
+      "R17"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E25",
+   "duracion_normal": 28,
+   "costo_aceleracion": 10,
+   "reduccion_tiempo_si_acelera": 9,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R19"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 2,
+     "riesgos_cubiertos": [
+      "R19"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R19"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E26",
+   "duracion_normal": 24,
+   "costo_aceleracion": 11,
+   "reduccion_tiempo_si_acelera": 4,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R06",
+    "R13",
+    "R15"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 3,
+     "riesgos_cubiertos": [
+      "R06"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 6,
+     "riesgos_cubiertos": [
+      "R06",
+      "R13",
+      "R15"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E27",
+   "duracion_normal": 23,
+   "costo_aceleracion": 6,
+   "reduccion_tiempo_si_acelera": 2,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R04",
+    "R17"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 4,
+     "riesgos_cubiertos": [
+      "R04"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 7,
+     "riesgos_cubiertos": [
+      "R04",
+      "R17"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E28",
+   "duracion_normal": 34,
+   "costo_aceleracion": 12,
+   "reduccion_tiempo_si_acelera": 11,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R07",
+    "R14",
+    "R17"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R07"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 8,
+     "riesgos_cubiertos": [
+      "R07",
+      "R14",
+      "R17"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E29",
+   "duracion_normal": 31,
+   "costo_aceleracion": 6,
+   "reduccion_tiempo_si_acelera": 12,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R12"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 2,
+     "riesgos_cubiertos": [
+      "R12"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E30",
+   "duracion_normal": 14,
+   "costo_aceleracion": 4,
+   "reduccion_tiempo_si_acelera": 4,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R17"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 3,
+     "riesgos_cubiertos": [
+      "R17"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 6,
+     "riesgos_cubiertos": [
+      "R17"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E31",
+   "duracion_normal": 33,
+   "costo_aceleracion": 8,
+   "reduccion_tiempo_si_acelera": 4,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R04",
+    "R05",
+    "R15",
+    "R20"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 4,
+     "riesgos_cubiertos": [
+      "R04",
+      "R05"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 7,
+     "riesgos_cubiertos": [
+      "R04",
+      "R05",
+      "R15",
+      "R20"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E32",
+   "duracion_normal": 21,
+   "costo_aceleracion": 11,
+   "reduccion_tiempo_si_acelera": 8,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R12",
+    "R14",
+    "R19"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R12"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 8,
+     "riesgos_cubiertos": [
+      "R12",
+      "R14",
+      "R19"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E33",
+   "duracion_normal": 23,
+   "costo_aceleracion": 6,
+   "reduccion_tiempo_si_acelera": 13,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R02",
+    "R06",
+    "R15"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 2,
+     "riesgos_cubiertos": [
+      "R02"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R02",
+      "R06",
+      "R15"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E34",
+   "duracion_normal": 30,
+   "costo_aceleracion": 12,
+   "reduccion_tiempo_si_acelera": 6,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R04"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 3,
+     "riesgos_cubiertos": [
+      "R04"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 6,
+     "riesgos_cubiertos": [
+      "R04"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E35",
+   "duracion_normal": 29,
+   "costo_aceleracion": 5,
+   "reduccion_tiempo_si_acelera": 3,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R12",
+    "R19"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 4,
+     "riesgos_cubiertos": [
+      "R12"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 7,
+     "riesgos_cubiertos": [
+      "R12",
+      "R19"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E36",
+   "duracion_normal": 13,
+   "costo_aceleracion": 11,
+   "reduccion_tiempo_si_acelera": 2,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R08"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R08"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 8,
+     "riesgos_cubiertos": [
+      "R08"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E37",
+   "duracion_normal": 21,
+   "costo_aceleracion": 11,
+   "reduccion_tiempo_si_acelera": 5,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R02",
+    "R03",
+    "R06",
+    "R19",
+    "R20"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 2,
+     "riesgos_cubiertos": [
+      "R02",
+      "R03"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R02",
+      "R03",
+      "R06",
+      "R19",
+      "R20"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E38",
+   "duracion_normal": 13,
+   "costo_aceleracion": 10,
+   "reduccion_tiempo_si_acelera": 12,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R08",
+    "R10",
+    "R18"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 3,
+     "riesgos_cubiertos": [
+      "R08"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 6,
+     "riesgos_cubiertos": [
+      "R08",
+      "R10",
+      "R18"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E39",
+   "duracion_normal": 25,
+   "costo_aceleracion": 15,
+   "reduccion_tiempo_si_acelera": 7,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R01",
+    "R03",
+    "R11",
+    "R17",
+    "R19"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 4,
+     "riesgos_cubiertos": [
+      "R01",
+      "R03"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 7,
+     "riesgos_cubiertos": [
+      "R01",
+      "R03",
+      "R11",
+      "R17",
+      "R19"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E40",
+   "duracion_normal": 20,
+   "costo_aceleracion": 4,
+   "reduccion_tiempo_si_acelera": 3,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R01",
+    "R06",
+    "R12",
+    "R16"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R01",
+      "R06"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 8,
+     "riesgos_cubiertos": [
+      "R01",
+      "R06",
+      "R12",
+      "R16"
+     ]
+    }
+   ]
+  }
+ ]
+}

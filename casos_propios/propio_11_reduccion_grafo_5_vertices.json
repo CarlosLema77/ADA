@@ -1,0 +1,200 @@
+{
+ "_descripcion": "Instancia que produce la reducción desde Cobertura de Vértices (ejemplo del informe): vértices a..e son interacciones y las aristas 1=ab 2=ac 3=bc 4=bd 5=ce 6=de son las categorías R01..R06. Óptimo: {b, c, d}.",
+ "parametros": {
+  "numero_etapas": 5,
+  "presupuesto_aceleracion_B": 5,
+  "presupuesto_conjunto_aceleracion_y_auditoria": 35,
+  "numero_categorias_riesgo": 6
+ },
+ "flujo": [
+  {
+   "origen": "a",
+   "destino": "b"
+  },
+  {
+   "origen": "b",
+   "destino": "c"
+  },
+  {
+   "origen": "c",
+   "destino": "d"
+  },
+  {
+   "origen": "d",
+   "destino": "e"
+  }
+ ],
+ "categorias_riesgo": [
+  {
+   "id": "R01",
+   "categoria": "sesgo",
+   "importancia": 1
+  },
+  {
+   "id": "R02",
+   "categoria": "privacidad",
+   "importancia": 3
+  },
+  {
+   "id": "R03",
+   "categoria": "formato",
+   "importancia": 5
+  },
+  {
+   "id": "R04",
+   "categoria": "alucinacion",
+   "importancia": 2
+  },
+  {
+   "id": "R05",
+   "categoria": "toxicidad",
+   "importancia": 4
+  },
+  {
+   "id": "R06",
+   "categoria": "seguridad",
+   "importancia": 1
+  }
+ ],
+ "etapas": [
+  {
+   "id": "a",
+   "duracion_normal": 4,
+   "costo_aceleracion": 2,
+   "reduccion_tiempo_si_acelera": 1,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R01",
+    "R02"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 2,
+     "riesgos_cubiertos": [
+      "R01"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R01",
+      "R02"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "duracion_normal": 5,
+   "costo_aceleracion": 3,
+   "reduccion_tiempo_si_acelera": 2,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R01",
+    "R03",
+    "R04"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 3,
+     "riesgos_cubiertos": [
+      "R01"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 6,
+     "riesgos_cubiertos": [
+      "R01",
+      "R03",
+      "R04"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "duracion_normal": 6,
+   "costo_aceleracion": 2,
+   "reduccion_tiempo_si_acelera": 3,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R02",
+    "R03",
+    "R05"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 4,
+     "riesgos_cubiertos": [
+      "R02"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 7,
+     "riesgos_cubiertos": [
+      "R02",
+      "R03",
+      "R05"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "duracion_normal": 3,
+   "costo_aceleracion": 1,
+   "reduccion_tiempo_si_acelera": 1,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R04",
+    "R06"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R04"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 8,
+     "riesgos_cubiertos": [
+      "R04",
+      "R06"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "duracion_normal": 4,
+   "costo_aceleracion": 2,
+   "reduccion_tiempo_si_acelera": 2,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R05",
+    "R06"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 2,
+     "riesgos_cubiertos": [
+      "R05"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R05",
+      "R06"
+     ]
+    }
+   ]
+  }
+ ]
+}

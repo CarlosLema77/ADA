@@ -1,0 +1,143 @@
+{
+ "_descripcion": "Ejemplo del informe donde el voraz da 3 y el óptimo es 2 (S1={1,2,3,4}, S2={1,3,5}, S3={2,4,6}).",
+ "parametros": {
+  "numero_etapas": 3,
+  "presupuesto_aceleracion_B": 6,
+  "presupuesto_conjunto_aceleracion_y_auditoria": 36,
+  "numero_categorias_riesgo": 6
+ },
+ "flujo": [
+  {
+   "origen": "E01",
+   "destino": "E02"
+  },
+  {
+   "origen": "E02",
+   "destino": "E03"
+  }
+ ],
+ "categorias_riesgo": [
+  {
+   "id": "R01",
+   "categoria": "sesgo",
+   "importancia": 1
+  },
+  {
+   "id": "R02",
+   "categoria": "privacidad",
+   "importancia": 3
+  },
+  {
+   "id": "R03",
+   "categoria": "formato",
+   "importancia": 5
+  },
+  {
+   "id": "R04",
+   "categoria": "alucinacion",
+   "importancia": 2
+  },
+  {
+   "id": "R05",
+   "categoria": "toxicidad",
+   "importancia": 4
+  },
+  {
+   "id": "R06",
+   "categoria": "seguridad",
+   "importancia": 1
+  }
+ ],
+ "etapas": [
+  {
+   "id": "E01",
+   "duracion_normal": 6,
+   "costo_aceleracion": 3,
+   "reduccion_tiempo_si_acelera": 2,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R01",
+    "R02",
+    "R03",
+    "R04"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 2,
+     "riesgos_cubiertos": [
+      "R01",
+      "R02"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R01",
+      "R02",
+      "R03",
+      "R04"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E02",
+   "duracion_normal": 5,
+   "costo_aceleracion": 2,
+   "reduccion_tiempo_si_acelera": 2,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R01",
+    "R03",
+    "R05"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 3,
+     "riesgos_cubiertos": [
+      "R01"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 6,
+     "riesgos_cubiertos": [
+      "R01",
+      "R03",
+      "R05"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E03",
+   "duracion_normal": 7,
+   "costo_aceleracion": 4,
+   "reduccion_tiempo_si_acelera": 3,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R02",
+    "R04",
+    "R06"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 4,
+     "riesgos_cubiertos": [
+      "R02"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 7,
+     "riesgos_cubiertos": [
+      "R02",
+      "R04",
+      "R06"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "entrada_G3_mochila_20_nodos",
+  "archivo": "entrada_G3_mochila_20_nodos.json",
+  "metodo": "programacion_dinamica_cadena",
+  "presupuesto_B": 72,
+  "etapas_aceleradas": [
+    "E02",
+    "E03",
+    "E04",
+    "E06",
+    "E08",
+    "E12"
+  ],
+  "costo_usado": 72,
+  "duracion_sin_acelerar": 501,
+  "duracion_final": 446,
+  "ahorro": 55,
+  "optimo_probado": true,
+  "x": {
+    "E01": 0,
+    "E02": 1,
+    "E03": 1,
+    "E04": 1,
+    "E05": 0,
+    "E06": 1,
+    "E07": 0,
+    "E08": 1,
+    "E09": 0,
+    "E10": 0,
+    "E11": 0,
+    "E12": 1,
+    "E13": 0,
+    "E14": 0,
+    "E15": 0,
+    "E16": 0,
+    "E17": 0,
+    "E18": 0,
+    "E19": 0,
+    "E20": 0
+  }
+}

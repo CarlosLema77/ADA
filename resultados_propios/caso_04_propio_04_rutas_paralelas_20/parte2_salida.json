@@ -1,0 +1,20 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_04_rutas_paralelas_20",
+  "archivo": "propio_04_rutas_paralelas_20.json",
+  "metodo": "voraz_mayor_ganancia",
+  "n_candidatos": 20,
+  "r_categorias": 12,
+  "factible": true,
+  "interacciones_elegidas": [
+    "E01",
+    "E10",
+    "E09",
+    "E02",
+    "E05"
+  ],
+  "tamano": 5,
+  "d_max_categorias_por_candidato": 4,
+  "cubre_todas_las_categorias": true
+}

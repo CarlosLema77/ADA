@@ -1,0 +1,14 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_08_infactible",
+  "archivo": "propio_08_infactible.json",
+  "nota": "tiempo del algoritmo solo (sin leer el archivo ni escribir resultados), mediana de varias repeticiones",
+  "parte1": {
+    "repeticiones": 5,
+    "mediana_ms": 0.0052,
+    "minimo_ms": 0.0046,
+    "maximo_ms": 0.0098
+  },
+  "parte2": null
+}

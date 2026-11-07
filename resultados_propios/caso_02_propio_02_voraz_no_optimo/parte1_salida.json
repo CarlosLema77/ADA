@@ -1,0 +1,22 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_02_voraz_no_optimo",
+  "archivo": "propio_02_voraz_no_optimo.json",
+  "metodo": "programacion_dinamica_cadena",
+  "presupuesto_B": 6,
+  "etapas_aceleradas": [
+    "E02",
+    "E03"
+  ],
+  "costo_usado": 6,
+  "duracion_sin_acelerar": 18,
+  "duracion_final": 13,
+  "ahorro": 5,
+  "optimo_probado": true,
+  "x": {
+    "E01": 0,
+    "E02": 1,
+    "E03": 1
+  }
+}

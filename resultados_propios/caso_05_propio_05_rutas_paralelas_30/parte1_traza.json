@@ -1,0 +1,19 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_05_rutas_paralelas_30",
+  "archivo": "propio_05_rutas_paralelas_30.json",
+  "metodo": "ramificacion_y_acotamiento",
+  "etapas_candidatas": 30,
+  "duracion_solucion_inicial_voraz": 199,
+  "nodos_explorados": 413,
+  "podas_por_cota": 193,
+  "limite_nodos": 3000000,
+  "mejoras_de_la_mejor_solucion": [
+    {
+      "nodo": 322,
+      "duracion": 197,
+      "costo": 97
+    }
+  ]
+}

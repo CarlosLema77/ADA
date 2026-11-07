@@ -1,0 +1,30 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_05_rutas_paralelas_30",
+  "archivo": "propio_05_rutas_paralelas_30.json",
+  "parte1": {
+    "ok": true,
+    "chequeos": {
+      "ids_validos_sin_repetidos": true,
+      "costo_recalculado": 97,
+      "respeta_presupuesto": true,
+      "costo_coincide_con_la_salida": true,
+      "duracion_sin_acelerar_recalculada": 264,
+      "duracion_final_recalculada": 197,
+      "duraciones_coinciden_con_la_salida": true,
+      "ahorro_coincide": true,
+      "optimalidad": "no verificada (instancia demasiado grande para enumerar)"
+    }
+  },
+  "parte2": {
+    "ok": true,
+    "chequeos": {
+      "ids_validos_sin_repetidos": true,
+      "categorias_sin_cubrir": [],
+      "cubre_todas": true,
+      "tamano_coincide": true,
+      "optimo_por_enumeracion": "no calculado (instancia grande o infactible)"
+    }
+  }
+}

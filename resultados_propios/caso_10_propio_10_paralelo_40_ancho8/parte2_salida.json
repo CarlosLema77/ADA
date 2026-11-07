@@ -1,0 +1,22 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_10_paralelo_40_ancho8",
+  "archivo": "propio_10_paralelo_40_ancho8.json",
+  "metodo": "voraz_mayor_ganancia",
+  "n_candidatos": 40,
+  "r_categorias": 20,
+  "factible": true,
+  "interacciones_elegidas": [
+    "E05",
+    "E11",
+    "E12",
+    "E16",
+    "E18",
+    "E39",
+    "E10"
+  ],
+  "tamano": 7,
+  "d_max_categorias_por_candidato": 5,
+  "cubre_todas_las_categorias": true
+}

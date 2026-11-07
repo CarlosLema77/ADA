@@ -1,0 +1,155 @@
+{
+ "_descripcion": "Flujo con rutas paralelas: A -> {B, C} -> D. B es la rama larga, así que solo acelerar B reduce la duración.",
+ "parametros": {
+  "numero_etapas": 4,
+  "presupuesto_aceleracion_B": 5,
+  "presupuesto_conjunto_aceleracion_y_auditoria": 35,
+  "numero_categorias_riesgo": 4
+ },
+ "flujo": [
+  {
+   "origen": "A",
+   "destino": "B"
+  },
+  {
+   "origen": "A",
+   "destino": "C"
+  },
+  {
+   "origen": "B",
+   "destino": "D"
+  },
+  {
+   "origen": "C",
+   "destino": "D"
+  }
+ ],
+ "categorias_riesgo": [
+  {
+   "id": "R01",
+   "categoria": "sesgo",
+   "importancia": 1
+  },
+  {
+   "id": "R02",
+   "categoria": "privacidad",
+   "importancia": 3
+  },
+  {
+   "id": "R03",
+   "categoria": "formato",
+   "importancia": 5
+  },
+  {
+   "id": "R04",
+   "categoria": "alucinacion",
+   "importancia": 2
+  }
+ ],
+ "etapas": [
+  {
+   "id": "A",
+   "duracion_normal": 2,
+   "costo_aceleracion": 1,
+   "reduccion_tiempo_si_acelera": 1,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R01"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 2,
+     "riesgos_cubiertos": [
+      "R01"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R01"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "duracion_normal": 10,
+   "costo_aceleracion": 5,
+   "reduccion_tiempo_si_acelera": 6,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R02",
+    "R03"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 3,
+     "riesgos_cubiertos": [
+      "R02"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 6,
+     "riesgos_cubiertos": [
+      "R02",
+      "R03"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "duracion_normal": 4,
+   "costo_aceleracion": 1,
+   "reduccion_tiempo_si_acelera": 3,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R03"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 4,
+     "riesgos_cubiertos": [
+      "R03"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 7,
+     "riesgos_cubiertos": [
+      "R03"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "duracion_normal": 2,
+   "costo_aceleracion": 1,
+   "reduccion_tiempo_si_acelera": 1,
+   "riesgos_cubiertos_auditoria_completa": [
+    "R01",
+    "R04"
+   ],
+   "variaciones_auditoria": [
+    {
+     "id": "parcial",
+     "costo": 5,
+     "riesgos_cubiertos": [
+      "R01"
+     ]
+    },
+    {
+     "id": "completa",
+     "costo": 8,
+     "riesgos_cubiertos": [
+      "R01",
+      "R04"
+     ]
+    }
+   ]
+  }
+ ]
+}

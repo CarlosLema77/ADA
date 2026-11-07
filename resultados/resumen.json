@@ -1,0 +1,33 @@
+{
+  "version": "entrega1-1.1",
+  "casos": [
+    {
+      "caso": "entrada_G3_mochila_20_nodos",
+      "carpeta": "caso_01_entrada_G3_mochila_20_nodos",
+      "estado": "OK",
+      "n_etapas": 20,
+      "aristas": 19,
+      "r_categorias": 12,
+      "B": 72,
+      "metodo_parte1": "programacion_dinamica_cadena",
+      "duracion_sin_acelerar": 501,
+      "duracion_final": 446,
+      "ahorro": 55,
+      "costo_usado": 72,
+      "optimo_probado": true,
+      "tiempo_parte1_ms": 0.0732,
+      "factible_parte2": true,
+      "tamano_cobertura": 4,
+      "interacciones": [
+        "E01",
+        "E16",
+        "E06",
+        "E03"
+      ],
+      "tiempo_parte2_ms": 0.0211,
+      "verifica_parte1": true,
+      "verifica_parte2": true,
+      "advertencias": []
+    }
+  ]
+}

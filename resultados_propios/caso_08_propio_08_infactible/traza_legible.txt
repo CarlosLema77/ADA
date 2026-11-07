@@ -1,0 +1,17 @@
+CASO propio_08_infactible  (versión entrega1-1.1)
+n = 3 etapas, r = 4 categorías, B = 4, aristas del flujo = 2
+
+== PARTE 1: aceleración ==
+método: programacion_dinamica_cadena
+recurrencia: DP[i][b] = max(DP[i-1][b], DP[i-1][b-c_i] + d_i) si c_i <= b; si no, DP[i-1][b]
+tabla DP: 4 filas x 5 columnas
+reconstrucción hacia atrás (de la última etapa a la primera):
+  etapa  presupuesto_antes  DP[i][b]  decisión   costo  ahorro  presupuesto_después
+  E03                    4         3  ACELERAR       4       3                   0
+  E02                    0         0  no              0       0                   0
+  E01                    0         0  no              0       0                   0
+etapas aceleradas: ['E03']
+costo usado = 4 de B = 4; duración 18 -> 15  (ahorro 3); óptimo probado: True
+
+== PARTE 2: cobertura de auditoría ==
+INFACTIBLE: instancia infactible: ningún candidato cubre las categorías ['R04']

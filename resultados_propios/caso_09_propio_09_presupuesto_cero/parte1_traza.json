@@ -1,0 +1,64 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_09_presupuesto_cero",
+  "archivo": "propio_09_presupuesto_cero.json",
+  "metodo": "programacion_dinamica_cadena",
+  "recurrencia": "DP[i][b] = max(DP[i-1][b], DP[i-1][b-c_i] + d_i) si c_i <= b; si no, DP[i-1][b]",
+  "orden_de_la_cadena": [
+    "E01",
+    "E02",
+    "E03"
+  ],
+  "dimension_tabla": {
+    "filas": 4,
+    "columnas": 1
+  },
+  "celdas": 4,
+  "decisiones_reconstruccion": [
+    {
+      "posicion": 1,
+      "presupuesto_antes": 0,
+      "dp_i_b": 0,
+      "acelerar": false,
+      "costo": 0,
+      "ahorro": 0,
+      "presupuesto_despues": 0,
+      "etapa": "E01"
+    },
+    {
+      "posicion": 2,
+      "presupuesto_antes": 0,
+      "dp_i_b": 0,
+      "acelerar": false,
+      "costo": 0,
+      "ahorro": 0,
+      "presupuesto_despues": 0,
+      "etapa": "E02"
+    },
+    {
+      "posicion": 3,
+      "presupuesto_antes": 0,
+      "dp_i_b": 0,
+      "acelerar": false,
+      "costo": 0,
+      "ahorro": 0,
+      "presupuesto_despues": 0,
+      "etapa": "E03"
+    }
+  ],
+  "tabla_dp": [
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ]
+  ]
+}

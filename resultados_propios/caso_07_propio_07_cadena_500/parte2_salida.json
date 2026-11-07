@@ -1,0 +1,27 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_07_cadena_500",
+  "archivo": "propio_07_cadena_500.json",
+  "metodo": "voraz_mayor_ganancia",
+  "n_candidatos": 500,
+  "r_categorias": 60,
+  "factible": true,
+  "interacciones_elegidas": [
+    "E02",
+    "E18",
+    "E42",
+    "E297",
+    "E120",
+    "E200",
+    "E393",
+    "E182",
+    "E126",
+    "E06",
+    "E138",
+    "E12"
+  ],
+  "tamano": 12,
+  "d_max_categorias_por_candidato": 8,
+  "cubre_todas_las_categorias": true
+}

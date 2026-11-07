@@ -1,0 +1,318 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_05_rutas_paralelas_30",
+  "archivo": "propio_05_rutas_paralelas_30.json",
+  "metodo": "voraz_mayor_ganancia",
+  "desempate": "gana el candidato que aparece primero en la entrada",
+  "vueltas": [
+    {
+      "vuelta": 1,
+      "elegida": "E03",
+      "ganancia": 4,
+      "categorias_nuevas": [
+        "R03",
+        "R05",
+        "R13",
+        "R15"
+      ],
+      "cubiertas_acumuladas": 4,
+      "faltan": 11,
+      "categorias_faltantes": [
+        "R01",
+        "R02",
+        "R04",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12",
+        "R14"
+      ],
+      "empatadas_que_perdieron_por_desempate": [
+        "E14",
+        "E17",
+        "E19",
+        "E20",
+        "E28"
+      ],
+      "mejores_candidatos_de_la_vuelta": [
+        {
+          "candidato": "E03",
+          "ganancia": 4
+        },
+        {
+          "candidato": "E14",
+          "ganancia": 4
+        },
+        {
+          "candidato": "E17",
+          "ganancia": 4
+        },
+        {
+          "candidato": "E19",
+          "ganancia": 4
+        },
+        {
+          "candidato": "E20",
+          "ganancia": 4
+        }
+      ]
+    },
+    {
+      "vuelta": 2,
+      "elegida": "E05",
+      "ganancia": 3,
+      "categorias_nuevas": [
+        "R07",
+        "R08",
+        "R09"
+      ],
+      "cubiertas_acumuladas": 7,
+      "faltan": 8,
+      "categorias_faltantes": [
+        "R01",
+        "R02",
+        "R04",
+        "R06",
+        "R10",
+        "R11",
+        "R12",
+        "R14"
+      ],
+      "empatadas_que_perdieron_por_desempate": [
+        "E09",
+        "E14",
+        "E15",
+        "E16",
+        "E17",
+        "E19",
+        "E27"
+      ],
+      "mejores_candidatos_de_la_vuelta": [
+        {
+          "candidato": "E05",
+          "ganancia": 3
+        },
+        {
+          "candidato": "E09",
+          "ganancia": 3
+        },
+        {
+          "candidato": "E14",
+          "ganancia": 3
+        },
+        {
+          "candidato": "E15",
+          "ganancia": 3
+        },
+        {
+          "candidato": "E16",
+          "ganancia": 3
+        }
+      ]
+    },
+    {
+      "vuelta": 3,
+      "elegida": "E14",
+      "ganancia": 3,
+      "categorias_nuevas": [
+        "R04",
+        "R06",
+        "R12"
+      ],
+      "cubiertas_acumuladas": 10,
+      "faltan": 5,
+      "categorias_faltantes": [
+        "R01",
+        "R02",
+        "R10",
+        "R11",
+        "R14"
+      ],
+      "empatadas_que_perdieron_por_desempate": [
+        "E15"
+      ],
+      "mejores_candidatos_de_la_vuelta": [
+        {
+          "candidato": "E14",
+          "ganancia": 3
+        },
+        {
+          "candidato": "E15",
+          "ganancia": 3
+        },
+        {
+          "candidato": "E06",
+          "ganancia": 2
+        },
+        {
+          "candidato": "E09",
+          "ganancia": 2
+        },
+        {
+          "candidato": "E10",
+          "ganancia": 2
+        }
+      ]
+    },
+    {
+      "vuelta": 4,
+      "elegida": "E10",
+      "ganancia": 2,
+      "categorias_nuevas": [
+        "R01",
+        "R11"
+      ],
+      "cubiertas_acumuladas": 12,
+      "faltan": 3,
+      "categorias_faltantes": [
+        "R02",
+        "R10",
+        "R14"
+      ],
+      "empatadas_que_perdieron_por_desempate": [
+        "E20",
+        "E27"
+      ],
+      "mejores_candidatos_de_la_vuelta": [
+        {
+          "candidato": "E10",
+          "ganancia": 2
+        },
+        {
+          "candidato": "E20",
+          "ganancia": 2
+        },
+        {
+          "candidato": "E27",
+          "ganancia": 2
+        },
+        {
+          "candidato": "E02",
+          "ganancia": 1
+        },
+        {
+          "candidato": "E04",
+          "ganancia": 1
+        }
+      ]
+    },
+    {
+      "vuelta": 5,
+      "elegida": "E07",
+      "ganancia": 1,
+      "categorias_nuevas": [
+        "R14"
+      ],
+      "cubiertas_acumuladas": 13,
+      "faltan": 2,
+      "categorias_faltantes": [
+        "R02",
+        "R10"
+      ],
+      "empatadas_que_perdieron_por_desempate": [
+        "E15",
+        "E26",
+        "E27",
+        "E29"
+      ],
+      "mejores_candidatos_de_la_vuelta": [
+        {
+          "candidato": "E07",
+          "ganancia": 1
+        },
+        {
+          "candidato": "E15",
+          "ganancia": 1
+        },
+        {
+          "candidato": "E26",
+          "ganancia": 1
+        },
+        {
+          "candidato": "E27",
+          "ganancia": 1
+        },
+        {
+          "candidato": "E29",
+          "ganancia": 1
+        }
+      ]
+    },
+    {
+      "vuelta": 6,
+      "elegida": "E27",
+      "ganancia": 1,
+      "categorias_nuevas": [
+        "R10"
+      ],
+      "cubiertas_acumuladas": 14,
+      "faltan": 1,
+      "categorias_faltantes": [
+        "R02"
+      ],
+      "empatadas_que_perdieron_por_desempate": [
+        "E29"
+      ],
+      "mejores_candidatos_de_la_vuelta": [
+        {
+          "candidato": "E27",
+          "ganancia": 1
+        },
+        {
+          "candidato": "E29",
+          "ganancia": 1
+        },
+        {
+          "candidato": "E01",
+          "ganancia": 0
+        },
+        {
+          "candidato": "E02",
+          "ganancia": 0
+        },
+        {
+          "candidato": "E04",
+          "ganancia": 0
+        }
+      ]
+    },
+    {
+      "vuelta": 7,
+      "elegida": "E29",
+      "ganancia": 1,
+      "categorias_nuevas": [
+        "R02"
+      ],
+      "cubiertas_acumuladas": 15,
+      "faltan": 0,
+      "categorias_faltantes": [],
+      "empatadas_que_perdieron_por_desempate": [],
+      "mejores_candidatos_de_la_vuelta": [
+        {
+          "candidato": "E29",
+          "ganancia": 1
+        },
+        {
+          "candidato": "E01",
+          "ganancia": 0
+        },
+        {
+          "candidato": "E02",
+          "ganancia": 0
+        },
+        {
+          "candidato": "E04",
+          "ganancia": 0
+        },
+        {
+          "candidato": "E06",
+          "ganancia": 0
+        }
+      ]
+    }
+  ]
+}

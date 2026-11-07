@@ -1,0 +1,94 @@
+% Archivo generado por docs/generar_tablas.py: no editar a mano.
+\newcommand{\VersionEntrega}{entrega1-1.1}
+\newcommand{\VersionPython}{3.13.18}
+\newcommand{\NombreCasoProfe}{\texttt{entrada\_G3\_mochila\_20\_nodos.json}}
+\newcommand{\TablaProfe}{%
+\begin{tabular}{@{}p{7.2cm}p{7.6cm}@{}}
+\toprule
+\multicolumn{2}{@{}l}{\textbf{Parte 1: aceleración}} \\
+\midrule
+Método & programación dinámica (cadena) \\
+Etapas / presupuesto $B$ & 20 / 72 \\
+Etapas aceleradas & E02, E03, E04, E06, E08, E12 \\
+Costo usado & 72 de 72 \\
+Duración & 501 $\to$ 446 \\
+Ahorro & 55 \\
+Óptimo confirmado por enumeración de los $2^{20}$ subconjuntos & sí \\
+Tiempo (mediana de 15 repeticiones) & 0{,}0732 ms \\
+\midrule
+\multicolumn{2}{@{}l}{\textbf{Parte 2: auditoría}} \\
+\midrule
+Candidatos & 20 etapas (una por etapa del flujo), $r=12$ categorías \\
+Interacciones elegidas (en orden) & E01, E16, E06, E03 \\
+Tamaño de la cobertura & 4 \\
+Óptimo por enumeración & 4 \\
+Cota $H(d)\cdot |J^*|$ con $d=4$ & 8{,}33 \\
+Tiempo (mediana de 15 repeticiones) & 0{,}0211 ms \\
+\bottomrule
+\end{tabular}}
+\newcommand{\TablaTrazaDP}{%
+\begin{tabular}{@{}lrrlrrr@{}}
+\toprule
+Etapa & $b$ antes & $DP[i][b]$ & Decisión & Costo & Ahorro & $b$ después \\
+\midrule
+E20 & 72 & 55 & no & 0 & 0 & 72 \\
+E19 & 72 & 55 & no & 0 & 0 & 72 \\
+E18 & 72 & 55 & no & 0 & 0 & 72 \\
+E17 & 72 & 55 & no & 0 & 0 & 72 \\
+E16 & 72 & 55 & no & 0 & 0 & 72 \\
+E15 & 72 & 55 & no & 0 & 0 & 72 \\
+E14 & 72 & 55 & no & 0 & 0 & 72 \\
+E13 & 72 & 55 & no & 0 & 0 & 72 \\
+E12 & 72 & 55 & acelerar & 9 & 7 & 63 \\
+E11 & 63 & 48 & no & 0 & 0 & 63 \\
+E10 & 63 & 48 & no & 0 & 0 & 63 \\
+E09 & 63 & 48 & no & 0 & 0 & 63 \\
+E08 & 63 & 48 & acelerar & 17 & 13 & 46 \\
+E07 & 46 & 35 & no & 0 & 0 & 46 \\
+E06 & 46 & 35 & acelerar & 13 & 10 & 33 \\
+E05 & 33 & 25 & no & 0 & 0 & 33 \\
+E04 & 33 & 25 & acelerar & 16 & 12 & 17 \\
+E03 & 17 & 13 & acelerar & 5 & 4 & 12 \\
+E02 & 12 & 9 & acelerar & 12 & 9 & 0 \\
+E01 & 0 & 0 & no & 0 & 0 & 0 \\
+\bottomrule
+\end{tabular}}
+\newcommand{\TablaTrazaVoraz}{%
+\begin{tabular}{@{}clrlrr@{}}
+\toprule
+Vuelta & Elegida & Ganancia $g^*$ & Categorías nuevas & Cubiertas & Faltan \\
+\midrule
+1 & E01 & 4 & R01, R02, R03, R10 & 4 & 8 \\
+2 & E16 & 4 & R04, R05, R09, R12 & 8 & 4 \\
+3 & E06 & 3 & R07, R08, R11 & 11 & 1 \\
+4 & E03 & 1 & R06 & 12 & 0 \\
+\bottomrule
+\end{tabular}}
+\newcommand{\TablaPropios}{%
+\begin{tabular}{@{}lrrrlrrrrrr@{}}
+\toprule
+Caso & $n$ & Aristas & $B$ & P1 & Nodos & Duración & ms P1 & $|J|$ & ms P2 & Verif. \\
+\midrule
+\texttt{01\_ejemplo\_informe\_n4} & 4 & 3 & 7 & DP & -- & 36$\to$26 & 0{,}009 & 2 & 0{,}004 & sí \\
+\texttt{02\_voraz\_no\_optimo} & 3 & 2 & 6 & DP & -- & 18$\to$13 & 0{,}005 & 3 & 0{,}005 & sí \\
+\texttt{03\_diamante} & 4 & 4 & 5 & B\&B & 1 & 14$\to$8 & 0{,}013 & 2 & 0{,}004 & sí \\
+\texttt{04\_rutas\_paralelas\_20} & 20 & 26 & 72 & B\&B & 261 & 144$\to$102 & 2{,}706 & 5 & 0{,}024 & sí \\
+\texttt{05\_rutas\_paralelas\_30} & 30 & 42 & 100 & B\&B & 413 & 264$\to$197 & 6{,}708 & 7 & 0{,}036 & sí \\
+\texttt{06\_cadena\_200} & 200 & 199 & 1500 & DP & -- & 4594$\to$3270 & 17{,}730 & 7 & 0{,}252 & sí \\
+\texttt{07\_cadena\_500} & 500 & 499 & 5000 & DP & -- & 10861$\to$7167 & 171{,}615 & 12 & 1{,}209 & sí \\
+\texttt{08\_infactible} & 3 & 2 & 4 & DP & -- & 18$\to$15 & 0{,}005 & infactible & -- & sí \\
+\texttt{09\_presupuesto\_cero} & 3 & 2 & 0 & DP & -- & 18$\to$18 & 0{,}006 & 3 & 0{,}005 & sí \\
+\texttt{10\_paralelo\_40\_ancho8} & 40 & 128 & 150 & B\&B & 49737 & 151$\to$120 & 1075{,}331 & 7 & 0{,}050 & sí \\
+\texttt{11\_reduccion\_grafo\_5\_vertices} & 5 & 4 & 5 & DP & -- & 22$\to$16 & 0{,}013 & 3 & 0{,}006 & sí \\
+\bottomrule
+\end{tabular}}
+\newcommand{\TablaEscalaDP}{%
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Caso & $n$ & $B$ & Celdas $(n+1)(B+1)$ & ms & ns por celda \\
+\midrule
+\texttt{caso de la profesora} & 20 & 72 & 1\,533 & 0{\,}073 & 47{\,}7 \\
+\texttt{06\_cadena\_200} & 200 & 1500 & 301\,701 & 17{\,}730 & 58{\,}8 \\
+\texttt{07\_cadena\_500} & 500 & 5000 & 2\,505\,501 & 171{\,}615 & 68{\,}5 \\
+\bottomrule
+\end{tabular}}

@@ -1,0 +1,23 @@
+CASO propio_11_reduccion_grafo_5_vertices  (versión entrega1-1.1)
+n = 5 etapas, r = 6 categorías, B = 5, aristas del flujo = 4
+
+== PARTE 1: aceleración ==
+método: programacion_dinamica_cadena
+recurrencia: DP[i][b] = max(DP[i-1][b], DP[i-1][b-c_i] + d_i) si c_i <= b; si no, DP[i-1][b]
+tabla DP: 6 filas x 6 columnas
+reconstrucción hacia atrás (de la última etapa a la primera):
+  etapa  presupuesto_antes  DP[i][b]  decisión   costo  ahorro  presupuesto_después
+  e                      5         6  ACELERAR       2       2                   3
+  d                      3         4  ACELERAR       1       1                   2
+  c                      2         3  ACELERAR       2       3                   0
+  b                      0         0  no              0       0                   0
+  a                      0         0  no              0       0                   0
+etapas aceleradas: ['c', 'd', 'e']
+costo usado = 5 de B = 5; duración 22 -> 16  (ahorro 6); óptimo probado: True
+
+== PARTE 2: cobertura de auditoría ==
+método: voraz de mayor ganancia (desempate: gana el candidato que aparece primero en la entrada)
+  vuelta 1: elige b (ganancia 3), cubre nuevas ['R01', 'R03', 'R04']; cubiertas 3/6, faltan 3
+  vuelta 2: elige c (ganancia 2), cubre nuevas ['R02', 'R05']; cubiertas 5/6, faltan 1
+  vuelta 3: elige d (ganancia 1), cubre nuevas ['R06']; cubiertas 6/6, faltan 0
+interacciones elegidas: ['b', 'c', 'd']  (tamaño 3)

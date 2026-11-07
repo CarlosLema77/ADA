@@ -1,0 +1,122 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_11_reduccion_grafo_5_vertices",
+  "archivo": "propio_11_reduccion_grafo_5_vertices.json",
+  "metodo": "programacion_dinamica_cadena",
+  "recurrencia": "DP[i][b] = max(DP[i-1][b], DP[i-1][b-c_i] + d_i) si c_i <= b; si no, DP[i-1][b]",
+  "orden_de_la_cadena": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+  ],
+  "dimension_tabla": {
+    "filas": 6,
+    "columnas": 6
+  },
+  "celdas": 36,
+  "decisiones_reconstruccion": [
+    {
+      "posicion": 1,
+      "presupuesto_antes": 0,
+      "dp_i_b": 0,
+      "acelerar": false,
+      "costo": 0,
+      "ahorro": 0,
+      "presupuesto_despues": 0,
+      "etapa": "a"
+    },
+    {
+      "posicion": 2,
+      "presupuesto_antes": 0,
+      "dp_i_b": 0,
+      "acelerar": false,
+      "costo": 0,
+      "ahorro": 0,
+      "presupuesto_despues": 0,
+      "etapa": "b"
+    },
+    {
+      "posicion": 3,
+      "presupuesto_antes": 2,
+      "dp_i_b": 3,
+      "acelerar": true,
+      "costo": 2,
+      "ahorro": 3,
+      "presupuesto_despues": 0,
+      "etapa": "c"
+    },
+    {
+      "posicion": 4,
+      "presupuesto_antes": 3,
+      "dp_i_b": 4,
+      "acelerar": true,
+      "costo": 1,
+      "ahorro": 1,
+      "presupuesto_despues": 2,
+      "etapa": "d"
+    },
+    {
+      "posicion": 5,
+      "presupuesto_antes": 5,
+      "dp_i_b": 6,
+      "acelerar": true,
+      "costo": 2,
+      "ahorro": 2,
+      "presupuesto_despues": 3,
+      "etapa": "e"
+    }
+  ],
+  "tabla_dp": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      2,
+      2,
+      3
+    ],
+    [
+      0,
+      0,
+      3,
+      3,
+      4,
+      5
+    ],
+    [
+      0,
+      1,
+      3,
+      4,
+      4,
+      5
+    ],
+    [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6
+    ]
+  ]
+}

@@ -1,0 +1,24 @@
+CASO propio_10_paralelo_40_ancho8  (versión entrega1-1.1)
+n = 40 etapas, r = 20 categorías, B = 150, aristas del flujo = 128
+
+== PARTE 1: aceleración ==
+método: ramificacion_y_acotamiento
+candidatas=40  nodos explorados=49737  podas por cota=24860  duración inicial (voraz)=125
+  mejora en el nodo 2197: duración 124 con costo 150
+  mejora en el nodo 4419: duración 123 con costo 150
+  mejora en el nodo 9805: duración 122 con costo 149
+  mejora en el nodo 16701: duración 121 con costo 150
+  mejora en el nodo 36348: duración 120 con costo 150
+etapas aceleradas: ['E03', 'E06', 'E07', 'E10', 'E12', 'E14', 'E15', 'E16', 'E19', 'E22', 'E23', 'E24', 'E25', 'E31', 'E33', 'E34', 'E35']
+costo usado = 150 de B = 150; duración 151 -> 120  (ahorro 31); óptimo probado: True
+
+== PARTE 2: cobertura de auditoría ==
+método: voraz de mayor ganancia (desempate: gana el candidato que aparece primero en la entrada)
+  vuelta 1: elige E05 (ganancia 5), cubre nuevas ['R08', 'R12', 'R15', 'R16', 'R20']; cubiertas 5/20, faltan 15
+  vuelta 2: elige E11 (ganancia 5), cubre nuevas ['R04', 'R09', 'R11', 'R13', 'R19']; cubiertas 10/20, faltan 10
+  vuelta 3: elige E12 (ganancia 3), cubre nuevas ['R03', 'R07', 'R18']; cubiertas 13/20, faltan 7
+  vuelta 4: elige E16 (ganancia 2), cubre nuevas ['R02', 'R06']; cubiertas 15/20, faltan 5
+  vuelta 5: elige E18 (ganancia 2), cubre nuevas ['R05', 'R14']; cubiertas 17/20, faltan 3
+  vuelta 6: elige E39 (ganancia 2), cubre nuevas ['R01', 'R17']; cubiertas 19/20, faltan 1
+  vuelta 7: elige E10 (ganancia 1), cubre nuevas ['R10']; cubiertas 20/20, faltan 0
+interacciones elegidas: ['E05', 'E11', 'E12', 'E16', 'E18', 'E39', 'E10']  (tamaño 7)

@@ -1,0 +1,27 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_08_infactible",
+  "archivo": "propio_08_infactible.json",
+  "parte1": {
+    "ok": true,
+    "chequeos": {
+      "ids_validos_sin_repetidos": true,
+      "costo_recalculado": 4,
+      "respeta_presupuesto": true,
+      "costo_coincide_con_la_salida": true,
+      "duracion_sin_acelerar_recalculada": 18,
+      "duracion_final_recalculada": 15,
+      "duraciones_coinciden_con_la_salida": true,
+      "ahorro_coincide": true,
+      "duracion_optima_por_enumeracion": 15,
+      "es_optima": true
+    }
+  },
+  "parte2": {
+    "ok": true,
+    "chequeos": {
+      "nota": "instancia infactible: no hay cobertura que verificar"
+    }
+  }
+}

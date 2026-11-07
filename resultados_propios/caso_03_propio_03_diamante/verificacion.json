@@ -1,0 +1,34 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_03_diamante",
+  "archivo": "propio_03_diamante.json",
+  "parte1": {
+    "ok": true,
+    "chequeos": {
+      "ids_validos_sin_repetidos": true,
+      "costo_recalculado": 5,
+      "respeta_presupuesto": true,
+      "costo_coincide_con_la_salida": true,
+      "duracion_sin_acelerar_recalculada": 14,
+      "duracion_final_recalculada": 8,
+      "duraciones_coinciden_con_la_salida": true,
+      "ahorro_coincide": true,
+      "duracion_optima_por_enumeracion": 8,
+      "es_optima": true
+    }
+  },
+  "parte2": {
+    "ok": true,
+    "chequeos": {
+      "ids_validos_sin_repetidos": true,
+      "categorias_sin_cubrir": [],
+      "cubre_todas": true,
+      "tamano_coincide": true,
+      "optimo_por_enumeracion": 2,
+      "brecha_voraz_menos_optimo": 0,
+      "cota_H(d)*optimo": 3.0,
+      "cumple_la_cota_de_aproximacion": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "entrada_G3_mochila_20_nodos",
+  "archivo": "entrada_G3_mochila_20_nodos.json",
+  "metodo": "voraz_mayor_ganancia",
+  "n_candidatos": 20,
+  "r_categorias": 12,
+  "factible": true,
+  "interacciones_elegidas": [
+    "E01",
+    "E16",
+    "E06",
+    "E03"
+  ],
+  "tamano": 4,
+  "d_max_categorias_por_candidato": 4,
+  "cubre_todas_las_categorias": true
+}

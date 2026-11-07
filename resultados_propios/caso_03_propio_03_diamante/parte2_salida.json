@@ -1,0 +1,17 @@
+{
+  "version": "entrega1-1.1",
+  "python": "3.13.18",
+  "caso": "propio_03_diamante",
+  "archivo": "propio_03_diamante.json",
+  "metodo": "voraz_mayor_ganancia",
+  "n_candidatos": 4,
+  "r_categorias": 4,
+  "factible": true,
+  "interacciones_elegidas": [
+    "B",
+    "D"
+  ],
+  "tamano": 2,
+  "d_max_categorias_por_candidato": 2,
+  "cubre_todas_las_categorias": true
+}
